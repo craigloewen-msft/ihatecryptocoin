@@ -6,6 +6,7 @@ const config = fs.existsSync('./config.js') ? require('./config') : require('./d
 
 // Configure Vue Specific set up
 
+console.log("Setting up normal app!");
 app.use(express.static(__dirname + "/dist"));
 
 // Configure secrets and variables
@@ -24,9 +25,12 @@ if (process.env.NODE_ENV == 'production') {
   config.adminMultichainAddress = process.env.adminMultichainAddress;
   config.adminMultichainPrivKey = process.env.adminMultichainPrivKey;
   hostPort = 80;
+  console.log("Running in production mode");
 } else {
   mongooseConnectionString = config.mongoDBConnectionString;
   hostPort = process.env.PORT || 3000;
+  console.log("Running in dev mode");
+} else {
 }
 
 // Multichain connect set up
