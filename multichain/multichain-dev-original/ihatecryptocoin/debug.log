@@ -1,0 +1,562 @@
+2022-05-26 19:17:57 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2022-05-26 19:17:57 MultiChain version build 2.2.1 protocol 20013 (Jun  2 2021, 09:39:46)
+2022-05-26 19:17:57 Using OpenSSL version OpenSSL 1.0.1h 5 Jun 2014
+2022-05-26 19:17:57 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2022-05-26 19:17:57 Default data directory /root/.multichain/ihatecryptocoin
+2022-05-26 19:17:57 Using data directory /root/.multichain/ihatecryptocoin
+2022-05-26 19:17:57 Using config file /root/.multichain/ihatecryptocoin/ihatecryptocoin.conf
+2022-05-26 19:17:57 Using at most 125 connections (1048576 file descriptors available)
+2022-05-26 19:17:57 Using 16 threads for script verification
+2022-05-26 19:17:57 Using wallet wallet.dat
+2022-05-26 19:17:57 init message: Verifying wallet...
+2022-05-26 19:17:57 Wallet file doesn't exist. New file will be created with version 3.
+2022-05-26 19:17:57 Binding RPC on address :: port 4772 (IPv4+IPv6 bind any: 1)
+2022-05-26 19:17:57 init message: Initializing multichain...
+2022-05-26 19:17:57 nFileVersion = 0
+2022-05-26 19:17:57 Keys: 0 plaintext, 0 encrypted, 0 w/ metadata, 0 total
+2022-05-26 19:17:57 mchn: Default key is not found - creating new... 
+2022-05-26 19:17:57 keypool added key 1, size=1
+2022-05-26 19:17:57 keypool added key 2, size=2
+2022-05-26 19:17:57 mchn: Parameter set is new, THIS IS GENESIS NODE - looking for genesis block...
+2022-05-26 19:17:57 mchn: Genesis block found
+2022-05-26 19:17:57 mchn: Parameter set is valid - initializing blockchain parameters...
+2022-05-26 19:17:57 Wallet mode: 00000103
+2022-05-26 19:17:57 Node paused state is set to 00000000
+2022-05-26 19:17:57 Bound to [::]:7181
+2022-05-26 19:17:57 Bound to 0.0.0.0:7181
+2022-05-26 19:17:57 Filter initialization completed
+2022-05-26 19:17:57 Setting banned transaction list:    0 transactions
+2022-05-26 19:17:57 init message: Loading block index...
+2022-05-26 19:17:57 Opening LevelDB in /root/.multichain/ihatecryptocoin/blocks/index
+2022-05-26 19:17:57 Opened LevelDB successfully
+2022-05-26 19:17:57 Opening LevelDB in /root/.multichain/ihatecryptocoin/chainstate
+2022-05-26 19:17:57 Opened LevelDB successfully
+2022-05-26 19:17:57 nFileVersion = 100000
+2022-05-26 19:17:57 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:17:57 LoadBlockIndexDB: last block file = 0
+2022-05-26 19:17:57 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2022-05-26 19:17:57 Checking all blk files are present...
+2022-05-26 19:17:57 LoadBlockIndexDB(): transaction index disabled
+2022-05-26 19:17:57 Initializing databases...
+2022-05-26 19:17:57 Pre-allocating up to position 0x1000000 in blk00000.dat
+2022-05-26 19:17:57 New stream. TxID: c0b5d1ee5dbf59ab1e550808ec2fdd4a0bab5ed04786cf722fbbe0600393b9d2, StreamRef: 0-81-47570, Name: root
+2022-05-26 19:17:57 UpdateTip:            new best=002e92d6c833b32ff3f0414d28497c7f3cb7000d2c6c483ec498e2319c8adedc  height=0  log2_work=8  tx=1  date=2022-05-26 19:17:57 progress=1.000000  cache=0
+2022-05-26 19:17:57 init message: Verifying blocks...
+2022-05-26 19:17:57  block index             117ms
+2022-05-26 19:17:57 MultiChain protocol version: 20013
+2022-05-26 19:17:57 init message: Loading wallet...
+2022-05-26 19:17:57 nFileVersion = 100000
+2022-05-26 19:17:57 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:17:57  wallet                    0ms
+2022-05-26 19:17:57 mapBlockIndex.size() = 1
+2022-05-26 19:17:57 nBestHeight = 0
+2022-05-26 19:17:57 setKeyPool.size() = 1
+2022-05-26 19:17:57 oldWallet.size() = 0
+2022-05-26 19:17:57 mapWallet.size() = 1
+2022-05-26 19:17:57 mapAddressBook.size() = 1
+2022-05-26 19:17:57 init message: Loading addresses...
+2022-05-26 19:17:57 Invalid or missing peers.dat; recreating
+2022-05-26 19:17:57 Loaded 0 addresses from peers.dat  0ms
+2022-05-26 19:17:57 AddLocal(172.21.0.2:7181,1)
+2022-05-26 19:17:57 Discover: IPv4 eth0: 172.21.0.2
+2022-05-26 19:17:57 dnsseed thread start
+2022-05-26 19:17:57 Loading addresses from DNS seeds (could take a while)
+2022-05-26 19:17:57 0 addresses found from DNS seeds
+2022-05-26 19:17:57 dnsseed thread exit
+2022-05-26 19:17:57 addcon thread start
+2022-05-26 19:17:57 net thread start
+2022-05-26 19:17:57 msghand thread start
+2022-05-26 19:17:57 opencon thread start
+2022-05-26 19:17:57 init message: Reaccepting unconfirmed wallet transactions...
+2022-05-26 19:17:57 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:17:57 MultiChainMiner started
+2022-05-26 19:17:57 dumpaddr thread start
+2022-05-26 19:17:57 init message: Done loading
+2022-05-26 19:17:57 Node started
+2022-05-26 19:17:57 MultiChainMiner: Block Found - 004511cea83c92f6bb354119b11be85afcf7840d056f7f33032b806af9f4adf8, prev: 002e92d6c833b32ff3f0414d28497c7f3cb7000d2c6c483ec498e2319c8adedc, height: 1, txs: 1
+2022-05-26 19:17:57 Pre-allocating up to position 0x100000 in rev00000.dat
+2022-05-26 19:17:57 UpdateTip:            new best=004511cea83c92f6bb354119b11be85afcf7840d056f7f33032b806af9f4adf8  height=1  log2_work=9  tx=2  date=2022-05-26 19:17:58 progress=1.000000  cache=0
+2022-05-26 19:17:57 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:17:57 MultiChainMiner: Block Found - 00a4b85f8cb216523473b4cebeb46a2c3b44182e42ff22805dd423f82ce45c24, prev: 004511cea83c92f6bb354119b11be85afcf7840d056f7f33032b806af9f4adf8, height: 2, txs: 1
+2022-05-26 19:17:57 UpdateTip:            new best=00a4b85f8cb216523473b4cebeb46a2c3b44182e42ff22805dd423f82ce45c24  height=2  log2_work=9.5849625  tx=3  date=2022-05-26 19:17:59 progress=1.000000  cache=0
+2022-05-26 19:17:57 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:17:59 addcon thread interrupt
+2022-05-26 19:17:59 dumpaddr thread stop
+2022-05-26 19:17:59 opencon thread interrupt
+2022-05-26 19:17:59 msghand thread interrupt
+2022-05-26 19:17:59 net thread interrupt
+2022-05-26 19:17:59 Shutdown: In progress...
+2022-05-26 19:18:00 MultiChainMiner terminated
+2022-05-26 19:18:00 StopNode()
+2022-05-26 19:18:00 Node stopped
+2022-05-26 19:18:00 Shutdown: done
+2022-05-26 19:19:56 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2022-05-26 19:19:56 MultiChain version build 2.2.1 protocol 20013 (Jun  2 2021, 09:39:46)
+2022-05-26 19:19:56 Using OpenSSL version OpenSSL 1.0.1h 5 Jun 2014
+2022-05-26 19:19:56 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2022-05-26 19:19:56 Default data directory /workspace/./multichain/.multichain/ihatecryptocoin
+2022-05-26 19:19:56 Using data directory /workspace/./multichain/.multichain/ihatecryptocoin
+2022-05-26 19:19:56 Using config file /workspace/./multichain/.multichain/ihatecryptocoin/ihatecryptocoin.conf
+2022-05-26 19:19:56 Using at most 125 connections (1048576 file descriptors available)
+2022-05-26 19:19:56 Using 16 threads for script verification
+2022-05-26 19:19:56 Using wallet wallet.dat
+2022-05-26 19:19:56 init message: Verifying wallet...
+2022-05-26 19:19:56 Wallet file exists. WalletDBVersion: 3.
+2022-05-26 19:19:56 Binding RPC on address :: port 4772 (IPv4+IPv6 bind any: 1)
+2022-05-26 19:19:56 init message: Initializing multichain...
+2022-05-26 19:19:56 mchn: Parameter set is valid - initializing blockchain parameters...
+2022-05-26 19:19:56 Wallet mode: 00000103
+2022-05-26 19:19:56 nFileVersion = 100000
+2022-05-26 19:19:56 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:19:56 Node paused state is set to 00000000
+2022-05-26 19:19:56 Bound to [::]:7181
+2022-05-26 19:19:56 Bound to 0.0.0.0:7181
+2022-05-26 19:19:56 Filter initialization completed
+2022-05-26 19:19:56 Setting banned transaction list:    0 transactions
+2022-05-26 19:19:56 init message: Loading block index...
+2022-05-26 19:19:56 Opening LevelDB in /workspace/./multichain/.multichain/ihatecryptocoin/blocks/index
+2022-05-26 19:19:56 Opened LevelDB successfully
+2022-05-26 19:19:56 Opening LevelDB in /workspace/./multichain/.multichain/ihatecryptocoin/chainstate
+2022-05-26 19:19:56 Opened LevelDB successfully
+2022-05-26 19:19:56 nFileVersion = 100000
+2022-05-26 19:19:56 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:19:56 LoadBlockIndexDB: last block file = 0
+2022-05-26 19:19:56 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=3, size=838, heights=0...2, time=2022-05-26...2022-05-26)
+2022-05-26 19:19:56 Checking all blk files are present...
+2022-05-26 19:19:56 LoadBlockIndexDB(): transaction index enabled
+2022-05-26 19:19:56 LoadBlockIndexDB(): hashBestChain=00a4b85f8cb216523473b4cebeb46a2c3b44182e42ff22805dd423f82ce45c24 height=2 date=2022-05-26 19:17:59 progress=1.000000
+2022-05-26 19:19:56 init message: Verifying blocks...
+2022-05-26 19:19:56 Verifying last 2 blocks at level 3
+2022-05-26 19:19:56 No coin database inconsistencies in last 2 blocks (2 transactions)
+2022-05-26 19:19:56  block index              27ms
+2022-05-26 19:19:56 MultiChain protocol version: 20013
+2022-05-26 19:19:56 init message: Loading wallet...
+2022-05-26 19:19:56 nFileVersion = 100000
+2022-05-26 19:19:56 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:19:56  wallet                    0ms
+2022-05-26 19:19:56 mapBlockIndex.size() = 3
+2022-05-26 19:19:56 nBestHeight = 2
+2022-05-26 19:19:56 setKeyPool.size() = 1
+2022-05-26 19:19:56 oldWallet.size() = 0
+2022-05-26 19:19:56 mapWallet.size() = 2
+2022-05-26 19:19:56 mapAddressBook.size() = 1
+2022-05-26 19:19:56 init message: Loading addresses...
+2022-05-26 19:19:56 Loaded 0 addresses from peers.dat  0ms
+2022-05-26 19:19:56 AddLocal(172.21.0.2:7181,1)
+2022-05-26 19:19:56 Discover: IPv4 eth0: 172.21.0.2
+2022-05-26 19:19:56 dnsseed thread start
+2022-05-26 19:19:56 Loading addresses from DNS seeds (could take a while)
+2022-05-26 19:19:56 0 addresses found from DNS seeds
+2022-05-26 19:19:56 dnsseed thread exit
+2022-05-26 19:19:56 addcon thread start
+2022-05-26 19:19:56 opencon thread start
+2022-05-26 19:19:56 net thread start
+2022-05-26 19:19:56 dumpaddr thread start
+2022-05-26 19:19:56 msghand thread start
+2022-05-26 19:19:56 init message: Reaccepting unconfirmed wallet transactions...
+2022-05-26 19:19:56 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:19:56 MultiChainMiner started
+2022-05-26 19:19:56 init message: Done loading
+2022-05-26 19:19:56 Node started
+2022-05-26 19:20:07 addcon thread interrupt
+2022-05-26 19:20:07 dumpaddr thread stop
+2022-05-26 19:20:07 opencon thread interrupt
+2022-05-26 19:20:07 msghand thread interrupt
+2022-05-26 19:20:07 net thread interrupt
+2022-05-26 19:20:07 Shutdown: In progress...
+2022-05-26 19:20:07 RPCAcceptHandler: Error: Operation canceled
+2022-05-26 19:20:07 MultiChainMiner terminated
+2022-05-26 19:20:07 StopNode()
+2022-05-26 19:20:07 Node stopped
+2022-05-26 19:20:07 Shutdown: done
+2022-05-26 19:20:18 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2022-05-26 19:20:18 MultiChain version build 2.2.1 protocol 20013 (Jun  2 2021, 09:39:46)
+2022-05-26 19:20:18 Using OpenSSL version OpenSSL 1.0.1h 5 Jun 2014
+2022-05-26 19:20:18 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2022-05-26 19:20:18 Default data directory /workspace/./multichain/.multichain/ihatecryptocoin
+2022-05-26 19:20:18 Using data directory /workspace/./multichain/.multichain/ihatecryptocoin
+2022-05-26 19:20:18 Using config file /workspace/./multichain/.multichain/ihatecryptocoin/ihatecryptocoin.conf
+2022-05-26 19:20:18 Using at most 125 connections (1048576 file descriptors available)
+2022-05-26 19:20:18 Using 16 threads for script verification
+2022-05-26 19:20:18 Using wallet wallet.dat
+2022-05-26 19:20:18 init message: Verifying wallet...
+2022-05-26 19:20:18 Wallet file exists. WalletDBVersion: 3.
+2022-05-26 19:20:18 Binding RPC on address :: port 4772 (IPv4+IPv6 bind any: 1)
+2022-05-26 19:20:18 init message: Initializing multichain...
+2022-05-26 19:20:18 mchn: Parameter set is valid - initializing blockchain parameters...
+2022-05-26 19:20:18 Wallet mode: 00000103
+2022-05-26 19:20:18 nFileVersion = 100000
+2022-05-26 19:20:18 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:20:18 Node paused state is set to 00000000
+2022-05-26 19:20:18 Bound to [::]:7181
+2022-05-26 19:20:18 Bound to 0.0.0.0:7181
+2022-05-26 19:20:18 Filter initialization completed
+2022-05-26 19:20:18 Setting banned transaction list:    0 transactions
+2022-05-26 19:20:18 init message: Loading block index...
+2022-05-26 19:20:18 Opening LevelDB in /workspace/./multichain/.multichain/ihatecryptocoin/blocks/index
+2022-05-26 19:20:18 Opened LevelDB successfully
+2022-05-26 19:20:18 Opening LevelDB in /workspace/./multichain/.multichain/ihatecryptocoin/chainstate
+2022-05-26 19:20:18 Opened LevelDB successfully
+2022-05-26 19:20:18 nFileVersion = 100000
+2022-05-26 19:20:18 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:20:18 LoadBlockIndexDB: last block file = 0
+2022-05-26 19:20:18 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=3, size=838, heights=0...2, time=2022-05-26...2022-05-26)
+2022-05-26 19:20:18 Checking all blk files are present...
+2022-05-26 19:20:18 LoadBlockIndexDB(): transaction index enabled
+2022-05-26 19:20:18 LoadBlockIndexDB(): hashBestChain=00a4b85f8cb216523473b4cebeb46a2c3b44182e42ff22805dd423f82ce45c24 height=2 date=2022-05-26 19:17:59 progress=1.000000
+2022-05-26 19:20:18 init message: Verifying blocks...
+2022-05-26 19:20:18 Verifying last 2 blocks at level 3
+2022-05-26 19:20:18 No coin database inconsistencies in last 2 blocks (2 transactions)
+2022-05-26 19:20:18  block index              37ms
+2022-05-26 19:20:18 MultiChain protocol version: 20013
+2022-05-26 19:20:18 init message: Loading wallet...
+2022-05-26 19:20:18 nFileVersion = 100000
+2022-05-26 19:20:18 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:20:18  wallet                    0ms
+2022-05-26 19:20:18 mapBlockIndex.size() = 3
+2022-05-26 19:20:18 nBestHeight = 2
+2022-05-26 19:20:18 setKeyPool.size() = 1
+2022-05-26 19:20:18 oldWallet.size() = 0
+2022-05-26 19:20:18 mapWallet.size() = 2
+2022-05-26 19:20:18 mapAddressBook.size() = 1
+2022-05-26 19:20:18 init message: Loading addresses...
+2022-05-26 19:20:18 Loaded 0 addresses from peers.dat  1ms
+2022-05-26 19:20:18 AddLocal(172.21.0.2:7181,1)
+2022-05-26 19:20:18 Discover: IPv4 eth0: 172.21.0.2
+2022-05-26 19:20:18 dnsseed thread start
+2022-05-26 19:20:18 Loading addresses from DNS seeds (could take a while)
+2022-05-26 19:20:18 0 addresses found from DNS seeds
+2022-05-26 19:20:18 dnsseed thread exit
+2022-05-26 19:20:18 net thread start
+2022-05-26 19:20:18 addcon thread start
+2022-05-26 19:20:18 opencon thread start
+2022-05-26 19:20:18 msghand thread start
+2022-05-26 19:20:18 dumpaddr thread start
+2022-05-26 19:20:18 init message: Reaccepting unconfirmed wallet transactions...
+2022-05-26 19:20:18 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:20:18 MultiChainMiner started
+2022-05-26 19:20:18 init message: Done loading
+2022-05-26 19:20:18 Node started
+2022-05-26 19:20:34 MultiChainMiner: Block Found - 003892a6ab3207f13acc5ab418828a329862abcb52781d735981c1d60e74a0e0, prev: 00a4b85f8cb216523473b4cebeb46a2c3b44182e42ff22805dd423f82ce45c24, height: 3, txs: 1
+2022-05-26 19:20:34 UpdateTip:            new best=003892a6ab3207f13acc5ab418828a329862abcb52781d735981c1d60e74a0e0  height=3  log2_work=10  tx=4  date=2022-05-26 19:20:34 progress=1.000000  cache=0
+2022-05-26 19:20:34 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:20:41 mchn: Granting send,receive permission(s) to address 1MWWdRyDzF4ncLFBV71KNHTdTLYkMpRr6ydLqM (0-4294967295)
+2022-05-26 19:20:41 CommitTransaction: 8d63e847df5133d449dc7700fd97fd4020e11de40d31bab72c2b7fd699327160, vin: 1, vout: 2
+2022-05-26 19:20:47 MultiChainMiner: Block Found - 00c3c714bb075093f43ef57115603e50f3e618a2ef73600c648709d8c3374036, prev: 003892a6ab3207f13acc5ab418828a329862abcb52781d735981c1d60e74a0e0, height: 4, txs: 2
+2022-05-26 19:20:47 UpdateTip:            new best=00c3c714bb075093f43ef57115603e50f3e618a2ef73600c648709d8c3374036  height=4  log2_work=10.321928  tx=6  date=2022-05-26 19:20:47 progress=1.000000  cache=0
+2022-05-26 19:20:47 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:20:51 opencon thread interrupt
+2022-05-26 19:20:51 addcon thread interrupt
+2022-05-26 19:20:51 msghand thread interrupt
+2022-05-26 19:20:51 dumpaddr thread stop
+2022-05-26 19:20:51 net thread interrupt
+2022-05-26 19:20:51 Shutdown: In progress...
+2022-05-26 19:20:51 MultiChainMiner terminated
+2022-05-26 19:20:51 StopNode()
+2022-05-26 19:20:51 Node stopped
+2022-05-26 19:20:51 Shutdown: done
+2022-05-26 19:20:57 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2022-05-26 19:20:57 MultiChain version build 2.2.1 protocol 20013 (Jun  2 2021, 09:39:46)
+2022-05-26 19:20:57 Using OpenSSL version OpenSSL 1.0.1h 5 Jun 2014
+2022-05-26 19:20:57 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2022-05-26 19:20:57 Default data directory /workspace/./multichain/.multichain/ihatecryptocoin
+2022-05-26 19:20:57 Using data directory /workspace/./multichain/.multichain/ihatecryptocoin
+2022-05-26 19:20:57 Using config file /workspace/./multichain/.multichain/ihatecryptocoin/ihatecryptocoin.conf
+2022-05-26 19:20:57 Using at most 125 connections (1048576 file descriptors available)
+2022-05-26 19:20:57 Using 16 threads for script verification
+2022-05-26 19:20:57 Using wallet wallet.dat
+2022-05-26 19:20:57 init message: Verifying wallet...
+2022-05-26 19:20:57 Wallet file exists. WalletDBVersion: 3.
+2022-05-26 19:20:57 Binding RPC on address :: port 4772 (IPv4+IPv6 bind any: 1)
+2022-05-26 19:20:57 init message: Initializing multichain...
+2022-05-26 19:20:57 mchn: Parameter set is valid - initializing blockchain parameters...
+2022-05-26 19:20:57 Wallet mode: 00000103
+2022-05-26 19:20:57 nFileVersion = 100000
+2022-05-26 19:20:57 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:20:57 Node paused state is set to 00000000
+2022-05-26 19:20:57 Bound to [::]:7181
+2022-05-26 19:20:57 Bound to 0.0.0.0:7181
+2022-05-26 19:20:57 Filter initialization completed
+2022-05-26 19:20:57 Setting banned transaction list:    0 transactions
+2022-05-26 19:20:57 init message: Loading block index...
+2022-05-26 19:20:57 Opening LevelDB in /workspace/./multichain/.multichain/ihatecryptocoin/blocks/index
+2022-05-26 19:20:57 Opened LevelDB successfully
+2022-05-26 19:20:57 Opening LevelDB in /workspace/./multichain/.multichain/ihatecryptocoin/chainstate
+2022-05-26 19:20:57 Opened LevelDB successfully
+2022-05-26 19:20:57 nFileVersion = 100000
+2022-05-26 19:20:57 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:20:57 LoadBlockIndexDB: last block file = 0
+2022-05-26 19:20:57 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=5, size=1631, heights=0...4, time=2022-05-26...2022-05-26)
+2022-05-26 19:20:57 Checking all blk files are present...
+2022-05-26 19:20:57 LoadBlockIndexDB(): transaction index enabled
+2022-05-26 19:20:57 LoadBlockIndexDB(): hashBestChain=00c3c714bb075093f43ef57115603e50f3e618a2ef73600c648709d8c3374036 height=4 date=2022-05-26 19:20:47 progress=1.000000
+2022-05-26 19:20:57 init message: Verifying blocks...
+2022-05-26 19:20:57 Verifying last 4 blocks at level 3
+2022-05-26 19:20:57 No coin database inconsistencies in last 4 blocks (5 transactions)
+2022-05-26 19:20:57  block index              28ms
+2022-05-26 19:20:57 MultiChain protocol version: 20013
+2022-05-26 19:20:57 init message: Loading wallet...
+2022-05-26 19:20:57 nFileVersion = 100000
+2022-05-26 19:20:57 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:20:57  wallet                    1ms
+2022-05-26 19:20:57 mapBlockIndex.size() = 5
+2022-05-26 19:20:57 nBestHeight = 4
+2022-05-26 19:20:57 setKeyPool.size() = 1
+2022-05-26 19:20:57 oldWallet.size() = 0
+2022-05-26 19:20:57 mapWallet.size() = 3
+2022-05-26 19:20:57 mapAddressBook.size() = 2
+2022-05-26 19:20:57 init message: Loading addresses...
+2022-05-26 19:20:57 Loaded 0 addresses from peers.dat  0ms
+2022-05-26 19:20:57 AddLocal(172.21.0.2:7181,1)
+2022-05-26 19:20:57 Discover: IPv4 eth0: 172.21.0.2
+2022-05-26 19:20:57 dnsseed thread start
+2022-05-26 19:20:57 Loading addresses from DNS seeds (could take a while)
+2022-05-26 19:20:57 0 addresses found from DNS seeds
+2022-05-26 19:20:57 addcon thread start
+2022-05-26 19:20:57 opencon thread start
+2022-05-26 19:20:57 dnsseed thread exit
+2022-05-26 19:20:57 msghand thread start
+2022-05-26 19:20:57 net thread start
+2022-05-26 19:20:57 dumpaddr thread start
+2022-05-26 19:20:57 init message: Reaccepting unconfirmed wallet transactions...
+2022-05-26 19:20:57 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:20:57 MultiChainMiner started
+2022-05-26 19:20:57 init message: Done loading
+2022-05-26 19:20:57 Node started
+2022-05-26 19:21:10 MultiChainMiner: Block Found - 00319752ea03aa17354ec15ab7f6d66ecda2217f1b14abe782643b1f89de48e2, prev: 00c3c714bb075093f43ef57115603e50f3e618a2ef73600c648709d8c3374036, height: 5, txs: 1
+2022-05-26 19:21:10 UpdateTip:            new best=00319752ea03aa17354ec15ab7f6d66ecda2217f1b14abe782643b1f89de48e2  height=5  log2_work=10.584963  tx=7  date=2022-05-26 19:21:10 progress=1.000000  cache=0
+2022-05-26 19:21:10 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:21:28 MultiChainMiner: Block Found - 001e73e4886b23aec2ec9e15cad5d3cd3bd77969268fd00ed2872dd5b04f827b, prev: 00319752ea03aa17354ec15ab7f6d66ecda2217f1b14abe782643b1f89de48e2, height: 6, txs: 1
+2022-05-26 19:21:28 UpdateTip:            new best=001e73e4886b23aec2ec9e15cad5d3cd3bd77969268fd00ed2872dd5b04f827b  height=6  log2_work=10.807355  tx=8  date=2022-05-26 19:21:28 progress=1.000000  cache=0
+2022-05-26 19:21:28 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:21:44 MultiChainMiner: Block Found - 00c0923a0c2d7aa7d433218f2ca3b7d32eef9f21109090d373c0f7b35ca13586, prev: 001e73e4886b23aec2ec9e15cad5d3cd3bd77969268fd00ed2872dd5b04f827b, height: 7, txs: 1
+2022-05-26 19:21:44 UpdateTip:            new best=00c0923a0c2d7aa7d433218f2ca3b7d32eef9f21109090d373c0f7b35ca13586  height=7  log2_work=11  tx=9  date=2022-05-26 19:21:44 progress=1.000000  cache=0
+2022-05-26 19:21:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:21:58 Adding fixed seed nodes as DNS doesn't seem to be available.
+2022-05-26 19:22:05 MultiChainMiner: Block Found - 0019cb5bdf77b8827267c7b42637bc46201e0b0c6b86b67c5595733566969d55, prev: 00c0923a0c2d7aa7d433218f2ca3b7d32eef9f21109090d373c0f7b35ca13586, height: 8, txs: 1
+2022-05-26 19:22:05 UpdateTip:            new best=0019cb5bdf77b8827267c7b42637bc46201e0b0c6b86b67c5595733566969d55  height=8  log2_work=11.169925  tx=10  date=2022-05-26 19:22:05 progress=1.000000  cache=0
+2022-05-26 19:22:05 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:22:15 MultiChainMiner: Block Found - 006570509d80bec68d3a118eccc03dda5d3741ca3431665a1d6c6e8651dfc572, prev: 0019cb5bdf77b8827267c7b42637bc46201e0b0c6b86b67c5595733566969d55, height: 9, txs: 1
+2022-05-26 19:22:15 UpdateTip:            new best=006570509d80bec68d3a118eccc03dda5d3741ca3431665a1d6c6e8651dfc572  height=9  log2_work=11.321928  tx=11  date=2022-05-26 19:22:15 progress=1.000000  cache=0
+2022-05-26 19:22:15 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:22:31 MultiChainMiner: Block Found - 006895b37062c0cef143622ce16edbf6defef45088a59469660159caffde35e2, prev: 006570509d80bec68d3a118eccc03dda5d3741ca3431665a1d6c6e8651dfc572, height: 10, txs: 1
+2022-05-26 19:22:31 UpdateTip:            new best=006895b37062c0cef143622ce16edbf6defef45088a59469660159caffde35e2  height=10  log2_work=11.459432  tx=12  date=2022-05-26 19:22:31 progress=1.000000  cache=0
+2022-05-26 19:22:31 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:22:53 MultiChainMiner: Block Found - 00dd98d7d053da52ef9bdc5dd8e20218848fb9d5002d9a3cb0ed7149e0faf818, prev: 006895b37062c0cef143622ce16edbf6defef45088a59469660159caffde35e2, height: 11, txs: 1
+2022-05-26 19:22:53 UpdateTip:            new best=00dd98d7d053da52ef9bdc5dd8e20218848fb9d5002d9a3cb0ed7149e0faf818  height=11  log2_work=11.584963  tx=13  date=2022-05-26 19:22:53 progress=1.000000  cache=0
+2022-05-26 19:22:53 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:23:00 MultiChainMiner: Block Found - 0039375d35b0c1c5eb7ac1c120989af54eaa3ac840b41daf68509456a58828c0, prev: 00dd98d7d053da52ef9bdc5dd8e20218848fb9d5002d9a3cb0ed7149e0faf818, height: 12, txs: 1
+2022-05-26 19:23:01 UpdateTip:            new best=0039375d35b0c1c5eb7ac1c120989af54eaa3ac840b41daf68509456a58828c0  height=12  log2_work=11.70044  tx=14  date=2022-05-26 19:23:00 progress=1.000000  cache=0
+2022-05-26 19:23:01 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:23:03 CommitTransaction: 32d13e96895857faa99ced34448a0ec1dbfd2e567b37dd7d389f99f7367b549c, vin: 1, vout: 3
+2022-05-26 19:23:15 MultiChainMiner: Block Found - 009604bece7752a483fbd7fca93486d5ad1e4eb37f55a2b7ee56ecbef5319a59, prev: 0039375d35b0c1c5eb7ac1c120989af54eaa3ac840b41daf68509456a58828c0, height: 13, txs: 2
+2022-05-26 19:23:15 UpdateTip:            new best=009604bece7752a483fbd7fca93486d5ad1e4eb37f55a2b7ee56ecbef5319a59  height=13  log2_work=11.807355  tx=16  date=2022-05-26 19:23:15 progress=1.000000  cache=0
+2022-05-26 19:23:15 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:23:26 opencon thread interrupt
+2022-05-26 19:23:26 addcon thread interrupt
+2022-05-26 19:23:26 msghand thread interrupt
+2022-05-26 19:23:26 dumpaddr thread stop
+2022-05-26 19:23:26 net thread interrupt
+2022-05-26 19:23:26 Shutdown: In progress...
+2022-05-26 19:23:26 MultiChainMiner terminated
+2022-05-26 19:23:26 StopNode()
+2022-05-26 19:23:26 Node stopped
+2022-05-26 19:23:26 Shutdown: done
+2022-05-26 19:23:29 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2022-05-26 19:23:29 MultiChain version build 2.2.1 protocol 20013 (Jun  2 2021, 09:39:46)
+2022-05-26 19:23:29 Using OpenSSL version OpenSSL 1.0.1h 5 Jun 2014
+2022-05-26 19:23:29 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2022-05-26 19:23:29 Default data directory /workspace/./multichain/.multichain/ihatecryptocoin
+2022-05-26 19:23:29 Using data directory /workspace/./multichain/.multichain/ihatecryptocoin
+2022-05-26 19:23:29 Using config file /workspace/./multichain/.multichain/ihatecryptocoin/ihatecryptocoin.conf
+2022-05-26 19:23:29 Using at most 125 connections (1048576 file descriptors available)
+2022-05-26 19:23:29 Using 16 threads for script verification
+2022-05-26 19:23:29 Using wallet wallet.dat
+2022-05-26 19:23:29 init message: Verifying wallet...
+2022-05-26 19:23:29 Wallet file exists. WalletDBVersion: 3.
+2022-05-26 19:23:29 Binding RPC on address :: port 4772 (IPv4+IPv6 bind any: 1)
+2022-05-26 19:23:29 init message: Initializing multichain...
+2022-05-26 19:23:29 mchn: Parameter set is valid - initializing blockchain parameters...
+2022-05-26 19:23:29 Wallet mode: 00000103
+2022-05-26 19:23:29 nFileVersion = 100000
+2022-05-26 19:23:29 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:23:29 Node paused state is set to 00000000
+2022-05-26 19:23:29 Bound to [::]:7181
+2022-05-26 19:23:29 Bound to 0.0.0.0:7181
+2022-05-26 19:23:29 Filter initialization completed
+2022-05-26 19:23:29 Setting banned transaction list:    0 transactions
+2022-05-26 19:23:29 init message: Loading block index...
+2022-05-26 19:23:29 Opening LevelDB in /workspace/./multichain/.multichain/ihatecryptocoin/blocks/index
+2022-05-26 19:23:29 Opened LevelDB successfully
+2022-05-26 19:23:29 Opening LevelDB in /workspace/./multichain/.multichain/ihatecryptocoin/chainstate
+2022-05-26 19:23:29 Opened LevelDB successfully
+2022-05-26 19:23:29 nFileVersion = 100000
+2022-05-26 19:23:29 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:23:29 LoadBlockIndexDB: last block file = 0
+2022-05-26 19:23:29 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=14, size=4369, heights=0...13, time=2022-05-26...2022-05-26)
+2022-05-26 19:23:29 Checking all blk files are present...
+2022-05-26 19:23:29 LoadBlockIndexDB(): transaction index enabled
+2022-05-26 19:23:29 LoadBlockIndexDB(): hashBestChain=009604bece7752a483fbd7fca93486d5ad1e4eb37f55a2b7ee56ecbef5319a59 height=13 date=2022-05-26 19:23:15 progress=1.000000
+2022-05-26 19:23:29 init message: Verifying blocks...
+2022-05-26 19:23:29 Verifying last 13 blocks at level 3
+2022-05-26 19:23:29 No coin database inconsistencies in last 13 blocks (15 transactions)
+2022-05-26 19:23:29  block index              30ms
+2022-05-26 19:23:29 MultiChain protocol version: 20013
+2022-05-26 19:23:29 init message: Loading wallet...
+2022-05-26 19:23:29 nFileVersion = 100000
+2022-05-26 19:23:29 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-26 19:23:29  wallet                    0ms
+2022-05-26 19:23:29 mapBlockIndex.size() = 14
+2022-05-26 19:23:29 nBestHeight = 13
+2022-05-26 19:23:29 setKeyPool.size() = 1
+2022-05-26 19:23:29 oldWallet.size() = 0
+2022-05-26 19:23:29 mapWallet.size() = 5
+2022-05-26 19:23:29 mapAddressBook.size() = 2
+2022-05-26 19:23:29 init message: Loading addresses...
+2022-05-26 19:23:29 Loaded 0 addresses from peers.dat  0ms
+2022-05-26 19:23:29 AddLocal(172.21.0.2:7181,1)
+2022-05-26 19:23:29 Discover: IPv4 eth0: 172.21.0.2
+2022-05-26 19:23:29 dnsseed thread start
+2022-05-26 19:23:29 Loading addresses from DNS seeds (could take a while)
+2022-05-26 19:23:29 msghand thread start
+2022-05-26 19:23:29 opencon thread start
+2022-05-26 19:23:29 net thread start
+2022-05-26 19:23:29 0 addresses found from DNS seeds
+2022-05-26 19:23:29 dnsseed thread exit
+2022-05-26 19:23:29 init message: Reaccepting unconfirmed wallet transactions...
+2022-05-26 19:23:29 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:23:29 MultiChainMiner started
+2022-05-26 19:23:29 init message: Done loading
+2022-05-26 19:23:29 addcon thread start
+2022-05-26 19:23:29 dumpaddr thread start
+2022-05-26 19:23:29 Node started
+2022-05-26 19:23:36 keypool added key 3, size=2
+2022-05-26 19:23:51 MultiChainMiner: Block Found - 000b4d5fb9f0d328b2915385207a72b239c81e32edcb74854655cfbcd41a8af5, prev: 009604bece7752a483fbd7fca93486d5ad1e4eb37f55a2b7ee56ecbef5319a59, height: 14, txs: 1
+2022-05-26 19:23:51 UpdateTip:            new best=000b4d5fb9f0d328b2915385207a72b239c81e32edcb74854655cfbcd41a8af5  height=14  log2_work=11.906891  tx=17  date=2022-05-26 19:23:51 progress=1.000000  cache=0
+2022-05-26 19:23:51 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:24:02 MultiChainMiner: Block Found - 002e716f5319b9968405f77d1f2b9631d8bfb0fd3c8e33bd0626d8a19d38bfa3, prev: 000b4d5fb9f0d328b2915385207a72b239c81e32edcb74854655cfbcd41a8af5, height: 15, txs: 1
+2022-05-26 19:24:02 UpdateTip:            new best=002e716f5319b9968405f77d1f2b9631d8bfb0fd3c8e33bd0626d8a19d38bfa3  height=15  log2_work=12  tx=18  date=2022-05-26 19:24:02 progress=1.000000  cache=0
+2022-05-26 19:24:02 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:24:13 mchn: Granting send,receive permission(s) to address 1QTGbgQMVXpqFUXboDVFmPDDhvs9hLdPX5ttRX (0-4294967295)
+2022-05-26 19:24:13 CommitTransaction: c8e3d8a862851c33125f9c1a1d2de9b6f2b2cbe36cf53cf06788702a300c465d, vin: 1, vout: 2
+2022-05-26 19:24:13 CommitTransaction: 074d7d1417d04077309596d94f90d7b20d7cf4b70195eba4dd707d1a9d78b49e, vin: 1, vout: 3
+2022-05-26 19:24:16 CommitTransaction: 4c84903efe53c33c15b37001bfbeb5a2a9b9e7bae3d687dff9f9e7a993f4a61f, vin: 1, vout: 3
+2022-05-26 19:24:23 MultiChainMiner: Block Found - 00caa4e620d96be3d6e946617c438ab7da0b0f0c394cfb3e824d7647c1df342d, prev: 002e716f5319b9968405f77d1f2b9631d8bfb0fd3c8e33bd0626d8a19d38bfa3, height: 16, txs: 4
+2022-05-26 19:24:23 UpdateTip:            new best=00caa4e620d96be3d6e946617c438ab7da0b0f0c394cfb3e824d7647c1df342d  height=16  log2_work=12.087463  tx=22  date=2022-05-26 19:24:23 progress=1.000000  cache=0
+2022-05-26 19:24:23 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:24:30 Adding fixed seed nodes as DNS doesn't seem to be available.
+2022-05-26 19:24:30 CommitTransaction: 7945367e3d6db6e3c37711445f3d9bd9e79f2c532f6b29897a6eeb4155179a51, vin: 1, vout: 3
+2022-05-26 19:24:42 MultiChainMiner: Block Found - 00ec71c90fb9b756dde3445f42b0c1a1d6652631bdbaa9b17632f23040c4bba6, prev: 00caa4e620d96be3d6e946617c438ab7da0b0f0c394cfb3e824d7647c1df342d, height: 17, txs: 2
+2022-05-26 19:24:42 UpdateTip:            new best=00ec71c90fb9b756dde3445f42b0c1a1d6652631bdbaa9b17632f23040c4bba6  height=17  log2_work=12.169925  tx=24  date=2022-05-26 19:24:42 progress=1.000000  cache=0
+2022-05-26 19:24:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:24:51 MultiChainMiner: Block Found - 00a7a71855fb358f472cbfad7cdc8e2fbfa5c7a8c8ff739830e45cc241fb0c35, prev: 00ec71c90fb9b756dde3445f42b0c1a1d6652631bdbaa9b17632f23040c4bba6, height: 18, txs: 1
+2022-05-26 19:24:51 UpdateTip:            new best=00a7a71855fb358f472cbfad7cdc8e2fbfa5c7a8c8ff739830e45cc241fb0c35  height=18  log2_work=12.247928  tx=25  date=2022-05-26 19:24:50 progress=1.000000  cache=0
+2022-05-26 19:24:51 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:25:11 MultiChainMiner: Block Found - 004f7bf457a5e08ea17d01af30d26a050db6dfa23d906391e17ff06d418e5411, prev: 00a7a71855fb358f472cbfad7cdc8e2fbfa5c7a8c8ff739830e45cc241fb0c35, height: 19, txs: 1
+2022-05-26 19:25:11 UpdateTip:            new best=004f7bf457a5e08ea17d01af30d26a050db6dfa23d906391e17ff06d418e5411  height=19  log2_work=12.321928  tx=26  date=2022-05-26 19:25:11 progress=1.000000  cache=0
+2022-05-26 19:25:11 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-26 19:25:13 opencon thread interrupt
+2022-05-26 19:25:13 addcon thread interrupt
+2022-05-26 19:25:13 msghand thread interrupt
+2022-05-26 19:25:13 dumpaddr thread stop
+2022-05-26 19:25:13 net thread interrupt
+2022-05-26 19:25:13 Shutdown: In progress...
+2022-05-26 19:25:14 MultiChainMiner terminated
+2022-05-26 19:25:14 StopNode()
+2022-05-26 19:25:14 Node stopped
+2022-05-26 19:25:14 Shutdown: done

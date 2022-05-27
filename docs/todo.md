@@ -1,0 +1,3 @@
+- On each registered user, create a new address and wallet and store the private and public key for the wallet with the user
+- On each transfer or mine event actually issue or send the coins
+- Store the private key of the original wallet with issue permissions
