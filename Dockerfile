@@ -4,14 +4,8 @@ WORKDIR /app/
 
 COPY . .
 
-RUN npm install
-
-RUN cd backend && npm install && cd ..
-
-RUN cd frontend && npm install && cd ..
-
-RUN npm build
+RUN npm run build
 
 ENV NODE_ENV=production   
 
-CMD [ "npm", "start"]
+CMD [ "npm", "run", "start"]
