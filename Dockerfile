@@ -6,6 +6,10 @@ COPY . .
 
 RUN npm install
 
+RUN cd backend && npm install && cd ..
+
+RUN cd frontend && npm install && cd ..
+
 RUN npm build
 
 EXPOSE 80
