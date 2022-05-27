@@ -30,8 +30,7 @@ if (process.env.NODE_ENV == 'production') {
   mongooseConnectionString = config.mongoDBConnectionString;
   hostPort = process.env.PORT || 3000;
   console.log("Running in dev mode");
-} else {
-}
+} 
 
 // Multichain connect set up
 
