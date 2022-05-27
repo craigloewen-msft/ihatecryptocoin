@@ -5,7 +5,7 @@ then
     cp -r ./multichain-dev-original ./.multichain
 fi
 
-if [[ -z "${MULTICHAIN_CONNECT_ADDRESS}" ]]; then
+if [[ ! -z "${MULTICHAIN_CONNECT_ADDRESS}" ]]; then
     echo "Connecting to server remotely";
     ./multichaind $MULTICHAIN_CONNECT_ADDRESS -datadir=./.multichain
 else
