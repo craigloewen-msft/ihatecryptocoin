@@ -23,7 +23,7 @@ if (process.env.NODE_ENV == 'production') {
   config.sessionSecret = process.env.sessionSecret;
   config.adminMultichainAddress = process.env.adminMultichainAddress;
   config.adminMultichainPrivKey = process.env.adminMultichainPrivKey;
-  hostPort = 8080;
+  hostPort = 80;
 } else {
   mongooseConnectionString = config.mongoDBConnectionString;
   hostPort = process.env.PORT || 3000;
