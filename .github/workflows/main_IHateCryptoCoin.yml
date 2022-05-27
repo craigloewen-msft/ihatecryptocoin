@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: https://craigsdevcontainers.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_08839291aa884344b79664becc037a62 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_9b02114bc099464f8cec342649e910ac }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_2f4c7add9751463b8d9e47f27d98c839 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_67cd225ef38642ba88cfad3e5c4fabea }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: craigsdevcontainers.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_08839291aa884344b79664becc037a62 }}/ihatecryptocoin:${{ github.sha }}
+        tags: craigsdevcontainers.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_2f4c7add9751463b8d9e47f27d98c839 }}/mcr.microsoft.com/appsvc/staticsite:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'IHateCryptoCoin'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_288f68e877964dca85496e6bcc2409a1 }}
-        images: 'craigsdevcontainers.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_08839291aa884344b79664becc037a62 }}/ihatecryptocoin:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_d4d63bbbc71048a78b2aec3cd8b10311 }}
+        images: 'craigsdevcontainers.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_2f4c7add9751463b8d9e47f27d98c839 }}/mcr.microsoft.com/appsvc/staticsite:${{ github.sha }}'
