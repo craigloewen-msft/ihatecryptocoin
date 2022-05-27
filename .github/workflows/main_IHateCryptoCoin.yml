@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: craigsdevcontainers.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_2f4c7add9751463b8d9e47f27d98c839 }}/mcr.microsoft.com/appsvc/staticsite:${{ github.sha }}
+        tags: craigsdevcontainers.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_2f4c7add9751463b8d9e47f27d98c839 }}/mcr.microsoft.com/appsvc/staticsite:latest
         file: ./Dockerfile
 
   deploy:
@@ -48,4 +48,4 @@ jobs:
         app-name: 'IHateCryptoCoin'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_d4d63bbbc71048a78b2aec3cd8b10311 }}
-        images: 'craigsdevcontainers.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_2f4c7add9751463b8d9e47f27d98c839 }}/mcr.microsoft.com/appsvc/staticsite:${{ github.sha }}'
+        images: 'craigsdevcontainers.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_2f4c7add9751463b8d9e47f27d98c839 }}/mcr.microsoft.com/appsvc/staticsite:latest'
