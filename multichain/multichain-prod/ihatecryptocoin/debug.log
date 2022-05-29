@@ -333,3 +333,461 @@
 2022-05-29 00:07:32 StopNode()
 2022-05-29 00:07:32 Node stopped
 2022-05-29 00:07:32 Shutdown: done
+2022-05-29 03:13:40 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2022-05-29 03:13:40 MultiChain version build 2.2.1 protocol 20013 (Jun  2 2021, 09:39:46)
+2022-05-29 03:13:40 Using OpenSSL version OpenSSL 1.0.1h 5 Jun 2014
+2022-05-29 03:13:40 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2022-05-29 03:13:40 Default data directory /workspace/multichain/./.multichain/ihatecryptocoin
+2022-05-29 03:13:40 Using data directory /workspace/multichain/./.multichain/ihatecryptocoin
+2022-05-29 03:13:40 Using config file /workspace/multichain/./.multichain/ihatecryptocoin/ihatecryptocoin.conf
+2022-05-29 03:13:40 Using at most 125 connections (1048576 file descriptors available)
+2022-05-29 03:13:40 Using 16 threads for script verification
+2022-05-29 03:13:40 Using wallet wallet.dat
+2022-05-29 03:13:40 init message: Verifying wallet...
+2022-05-29 03:13:40 Wallet file exists. WalletDBVersion: 3.
+2022-05-29 03:13:40 Binding RPC on address :: port 4772 (IPv4+IPv6 bind any: 1)
+2022-05-29 03:13:40 init message: Initializing multichain...
+2022-05-29 03:13:40 mchn: Seed address resolved: 52.180.68.180:2765
+2022-05-29 03:13:40 mchn: Parameter set is valid - initializing blockchain parameters...
+2022-05-29 03:13:40 Wallet mode: 00000103
+2022-05-29 03:13:40 nFileVersion = 100000
+2022-05-29 03:13:40 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-29 03:13:40 Node paused state is set to 00000000
+2022-05-29 03:13:40 Bound to [::]:2765
+2022-05-29 03:13:40 Bound to 0.0.0.0:2765
+2022-05-29 03:13:40 Filter initialization completed
+2022-05-29 03:13:40 Setting banned transaction list:    0 transactions
+2022-05-29 03:13:40 init message: Loading block index...
+2022-05-29 03:13:40 Opening LevelDB in /workspace/multichain/./.multichain/ihatecryptocoin/blocks/index
+2022-05-29 03:13:40 Opened LevelDB successfully
+2022-05-29 03:13:40 Opening LevelDB in /workspace/multichain/./.multichain/ihatecryptocoin/chainstate
+2022-05-29 03:13:40 Opened LevelDB successfully
+2022-05-29 03:13:40 nFileVersion = 100000
+2022-05-29 03:13:40 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-29 03:13:40 LoadBlockIndexDB: last block file = 0
+2022-05-29 03:13:40 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=47, size=20171, heights=0...44, time=2022-05-25...2022-05-29)
+2022-05-29 03:13:40 Checking all blk files are present...
+2022-05-29 03:13:40 LoadBlockIndexDB(): transaction index enabled
+2022-05-29 03:13:40 LoadBlockIndexDB(): hashBestChain=00ee806873357db28318a263669a37bb5328209bfbc3eb61709f7cfa818e1972 height=44 date=2022-05-25 20:36:10 progress=1.000000
+2022-05-29 03:13:40 init message: Verifying blocks...
+2022-05-29 03:13:40 Verifying last 44 blocks at level 3
+2022-05-29 03:13:40 No coin database inconsistencies in last 44 blocks (67 transactions)
+2022-05-29 03:13:40  block index              30ms
+2022-05-29 03:13:40 MultiChain protocol version: 20012
+2022-05-29 03:13:40 init message: Loading wallet...
+2022-05-29 03:13:40 nFileVersion = 100000
+2022-05-29 03:13:40 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-29 03:13:40  wallet                    0ms
+2022-05-29 03:13:40 mapBlockIndex.size() = 163
+2022-05-29 03:13:40 nBestHeight = 44
+2022-05-29 03:13:40 setKeyPool.size() = 1
+2022-05-29 03:13:40 oldWallet.size() = 0
+2022-05-29 03:13:40 mapWallet.size() = 3
+2022-05-29 03:13:40 mapAddressBook.size() = 1
+2022-05-29 03:13:40 init message: Loading addresses...
+2022-05-29 03:13:40 Loaded 7 addresses from peers.dat  0ms
+2022-05-29 03:13:40 AddLocal(172.21.0.2:2765,1)
+2022-05-29 03:13:40 Discover: IPv4 eth0: 172.21.0.2
+2022-05-29 03:13:40 dnsseed thread start
+2022-05-29 03:13:40 net thread start
+2022-05-29 03:13:40 addcon thread start
+2022-05-29 03:13:40 opencon thread start
+2022-05-29 03:13:40 Seed node is set, trying to connect to 52.180.68.180:2765...
+2022-05-29 03:13:40 msghand thread start
+2022-05-29 03:13:40 dumpaddr thread start
+2022-05-29 03:13:40 init message: Reaccepting unconfirmed wallet transactions...
+2022-05-29 03:13:40 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:40 MultiChainMiner started
+2022-05-29 03:13:40 init message: Done loading
+2022-05-29 03:13:40 Node started
+2022-05-29 03:13:40 mchn: Sending minimal parameter set to 52.180.68.180:2765
+2022-05-29 03:13:40 receive version message: /MultiChain:0.2.0.13/: version 70002, blocks=210, us=100.8.207.162:62225, peer=1
+2022-05-29 03:13:40 Added time data, samples 2, offset +0 (+0 minutes)
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 mchn: Parameter set from peer=1 verified
+2022-05-29 03:13:41 UpdateTip:            new best=0022e8ddc3ed79e20218ad2dffbee0600c603f1919985652617b58ac1a1cf91d  height=45  log2_work=13.523562  tx=69  date=2022-05-25 20:36:22 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=0031538c512bd4d15f36982bef58581cd92fbe418b675100be3aec3fc509adb3  height=46  log2_work=13.554589  tx=70  date=2022-05-25 20:36:42 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=00cee0763a226373664461d894cdc7386b410fb76641e6382fa214ac04922fbb  height=47  log2_work=13.584963  tx=71  date=2022-05-25 20:36:55 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=00939e6c6e19d1901335e81f51f6ff0a15427f7606cac73016028b291faa5928  height=48  log2_work=13.61471  tx=72  date=2022-05-25 20:37:04 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=00a35f3e29aee8046e7195c93be019f34aa371bb9140817c331f6be4f19b91b1  height=49  log2_work=13.643856  tx=73  date=2022-05-25 20:37:18 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=0047eb965163b73dc357e68edfb6ca2971a6780adc4266546e4f7319e3e36c6b  height=50  log2_work=13.672425  tx=74  date=2022-05-25 20:37:39 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=003215959b9965b00afa35276dfdfcdb185ca34ca7f3876a987615cf63f9b1c0  height=51  log2_work=13.70044  tx=75  date=2022-05-25 20:37:54 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=00d81e736b873524798361e4005b61a2a6ca2a7b636c74d0dad1b7a8b6bea144  height=52  log2_work=13.72792  tx=76  date=2022-05-25 20:38:01 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=00fb40bdf04ec47f85a10b640e5eb784f847fb02cbddee31fd37ba2031e8deb2  height=53  log2_work=13.754888  tx=77  date=2022-05-25 20:38:25 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=000634f8d9dcf5741a57ca50ff763b00f26fe6b151cfc7928e51c775d261c4ab  height=54  log2_work=13.78136  tx=78  date=2022-05-25 20:38:46 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=006d4cdd53954fc15e2012d24e71649929244b7e40037bda8e912fca89a7f4a9  height=55  log2_work=13.807355  tx=79  date=2022-05-25 20:38:50 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=001799496055eff0095542f720b3ef9a74c974c396f29de5c44ba743dc641817  height=56  log2_work=13.83289  tx=80  date=2022-05-25 20:39:11 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=00c4d4d103944ec8bfc1c3953a7c263ddab31ab889028b2d14f6b65b2126e702  height=57  log2_work=13.857981  tx=81  date=2022-05-25 20:39:18 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=0092f79db7fa9b654cf9c8b383cf6bd30efccf8486d5c336da7aa171a57aa8f5  height=58  log2_work=13.882643  tx=82  date=2022-05-25 20:39:43 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=00cbbee43d9bae706ebd19f5aa1d9bb1ec20ec24e9f57b7671911b75831f3310  height=59  log2_work=13.906891  tx=83  date=2022-05-25 20:39:51 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:41 UpdateTip:            new best=003b0a2e314a626b784b0309efab5f743082ba95438406f8ac5dad8628c143ed  height=60  log2_work=13.930737  tx=85  date=2022-05-25 20:42:40 progress=1.000000  cache=0
+2022-05-29 03:13:41 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00d6f2a742498571e502a3a968466b94196743815169a5f1e6b11d7d2ac1689c  height=61  log2_work=13.954196  tx=86  date=2022-05-25 20:42:47 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00b14c701894ba0f84cfe850e477cb3fdba69f6a3661b02d5835f05e44171668  height=62  log2_work=13.97728  tx=87  date=2022-05-25 20:42:52 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00cdd7c9edddfaa88bb1f2a5ed71f6c636c7073c7f263c2d7814954466cc2ec0  height=63  log2_work=14  tx=88  date=2022-05-25 20:42:58 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=009c03ac5707af0ec9a3f28bf5eddc3819ee20c60ca85f80bbe139139f154a68  height=64  log2_work=14.022368  tx=89  date=2022-05-25 20:43:03 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00568b2ed7cbaea1c9b4c6917e5ce48a8d332860d00f38856ef5895e0ff21ab9  height=65  log2_work=14.044394  tx=90  date=2022-05-25 20:43:05 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=0034e505578211f52494e5dda0ea10bb7b86a21c5016476762a443b5f14fbb01  height=66  log2_work=14.066089  tx=91  date=2022-05-25 20:43:06 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=000cfda243135d212cb452411c774fc2ed88967b4121e2d0db7b29f49791ffb5  height=67  log2_work=14.087463  tx=92  date=2022-05-25 20:43:11 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00fa6b0a45a84ad25600770bdc454abc6fd34079f1710d14d2250616627bb2ee  height=68  log2_work=14.108524  tx=93  date=2022-05-25 20:43:26 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00380b6521d5d85df31bed49dc1b8c2c21dbaa1a0da85a67738471fad9c8e0d7  height=69  log2_work=14.129283  tx=94  date=2022-05-25 20:43:54 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00d967aedb9550629b7397a04212440dc31a6373e4b6d746fb7b4f75a685adc5  height=70  log2_work=14.149747  tx=95  date=2022-05-25 20:44:10 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=005ce2c0b9f29c4078b5a03e381c5ad3a1d3c859c2cfeba895be35963791af95  height=71  log2_work=14.169925  tx=97  date=2022-05-25 20:44:25 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00b37274b9e469597ebb4503d440789a26970ef7c98ecf08e4f0e369e8415b1d  height=72  log2_work=14.189825  tx=98  date=2022-05-25 20:44:44 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=003bdbf02ec55b63d4eec4f5643fd3b9c409872bca82d9281997643a20d6b3d3  height=73  log2_work=14.209453  tx=99  date=2022-05-25 20:45:12 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=002b08b9345e7224ef03b5796fec18b1c6c4a7e21deb5cd4d8e84ebc8633e2d3  height=74  log2_work=14.228819  tx=100  date=2022-05-25 20:45:15 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=007ce059fea02db923c7fb6d122cbfa0c4c7b520ce6f625538355997bb6daba7  height=75  log2_work=14.247928  tx=101  date=2022-05-25 20:45:25 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00c9d8d1a4f8fecb490e7d0e7564f8c3b4bdcd60048fe4eebfa46106ad6d09ce  height=76  log2_work=14.266787  tx=102  date=2022-05-25 20:45:45 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00840e8e58d7be8492d02bf51e636cc70e50ef57f4586e5d668358e6da81f4b0  height=77  log2_work=14.285402  tx=103  date=2022-05-25 20:45:55 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=0000c3cdbdacf7615fb34ca8a56e5692e3a9136cdf4c2c886e055881bbe292ca  height=78  log2_work=14.303781  tx=105  date=2022-05-25 20:46:09 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00ec7c8caa94b3a57981bdb33978617c71cda903f07abca28ef9793b798b56eb  height=79  log2_work=14.321928  tx=106  date=2022-05-25 20:46:22 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00a1129f6414ce7f644697fb87ebbebbf535fadee8d53d958742aacb3e942bd5  height=80  log2_work=14.33985  tx=107  date=2022-05-25 20:46:35 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=0035f5d9ab0d6aed5e2a9f9764b1c626e5444606951bb830036966111a4f0fb8  height=81  log2_work=14.357552  tx=108  date=2022-05-25 20:46:56 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=0018118acda0e02e641cbb79ee1a3bbc568b73bb74f3973de60035059d8dbdb7  height=82  log2_work=14.375039  tx=109  date=2022-05-25 20:47:18 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=0041e62fe565366f91b0f77c57cc23e24fb7745f50e1dd8ef95a92cfe211d9b1  height=83  log2_work=14.392317  tx=110  date=2022-05-25 20:47:22 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00c1e775630fb95af524ecd283a93e550ae07c1ce0f5eeb67723b0937092eaa3  height=84  log2_work=14.409391  tx=111  date=2022-05-25 20:47:45 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00a97882fa66ffd9bf1c91d03149bcf2e55e8f892cd64c3222256e04f5451bfd  height=85  log2_work=14.426265  tx=113  date=2022-05-25 20:47:59 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=009aa5b9dadc3336d80dc6e5ba9abebacf6dac7de4e7a632abeb8547b4f3b298  height=86  log2_work=14.442943  tx=115  date=2022-05-25 20:48:07 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=005f00a3e4f5274558041c62b823bbf01e4ce1c49d143b939d3ad58c1ee1e89d  height=87  log2_work=14.459432  tx=117  date=2022-05-25 20:48:25 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00b4a90328c7a5d426d8083858fbc2b769eaf13aff232bc6603422aab6fbb54f  height=88  log2_work=14.475733  tx=119  date=2022-05-25 20:48:48 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=004d6d0204674b6ee53b1f8881392e91fa2cd25709d4e79658fdeea34a11ddbf  height=89  log2_work=14.491853  tx=120  date=2022-05-25 20:48:59 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=006e2699a7e9fa1a4d642bbdf8cf4aabcea3b526c6e48b724272e444567230f8  height=90  log2_work=14.507795  tx=121  date=2022-05-25 20:49:09 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00f226491b4e1c0dea5c1fa91302f9f2b5adf631c7142c2ac2b0667619c1b26f  height=91  log2_work=14.523562  tx=123  date=2022-05-25 20:49:27 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=009de388a271851a98dafb0b851a6be0c9d7c364e5f49cf2e6abdb76cb2639e5  height=92  log2_work=14.539159  tx=124  date=2022-05-25 20:49:49 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00a1ce910246a7bea03f017f433f432c4e1e2bf0ce4a23d6bbb071f30e7a72dc  height=93  log2_work=14.554589  tx=125  date=2022-05-25 20:50:02 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00f877d5e389ec27f126677bda9d47890007817f1c96066ec75276ef7bde7f98  height=94  log2_work=14.569856  tx=126  date=2022-05-25 20:50:17 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00d3e5d71edba26339775a90c5274ba75dcc400eb99291cb4c2d49911597c511  height=95  log2_work=14.584963  tx=127  date=2022-05-25 20:50:22 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=009240a75be4c427df0c5726a6b29fda5c631ce4cd7aa564f65c36cb4fbc01df  height=96  log2_work=14.599913  tx=128  date=2022-05-25 20:50:47 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=005510091daf10cfc43868abdfc3b3134534dd7d120528608b755662609557fc  height=97  log2_work=14.61471  tx=129  date=2022-05-25 20:51:06 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:42 UpdateTip:            new best=00e7dfb50315e7aa1e8f5336be5a2023a2665309096acd54e4c815ad1a4873c6  height=98  log2_work=14.629357  tx=130  date=2022-05-25 20:51:14 progress=1.000000  cache=0
+2022-05-29 03:13:42 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=0044937eb4eeea9fdac3ae4a6c36bb481c312409763cd2c6ce8347facd624180  height=99  log2_work=14.643856  tx=131  date=2022-05-25 20:51:31 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00378c0c5c2f997c8eeeff521dbf8dcedf3c3bcb3b4cf1aa5b29e16f53e45890  height=100  log2_work=14.658211  tx=132  date=2022-05-25 20:51:45 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=0076ecb08fa71dd82f184e2221ed02837fad498c35e65d14511b65e4ce95750b  height=101  log2_work=14.672425  tx=133  date=2022-05-25 20:52:00 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00b365effaa6857b48c08fdd185a1b6adb6b1effeaf2e9e0a63fcc3ff57e8307  height=102  log2_work=14.686501  tx=135  date=2022-05-25 20:52:14 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00445ee3154cc1a99f14925cc30dd6532d1e6c92c4f19160b4ea7bf6600ed5f4  height=103  log2_work=14.70044  tx=136  date=2022-05-25 20:52:29 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=009e4351a8cdadf7c2b275d6874c536f1795721fb0529d48a20ae9fa6ed686cc  height=104  log2_work=14.714246  tx=137  date=2022-05-25 20:52:41 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00342a40e36b061be063037bf5d8c770d5ab1a15226fbacce8479a8fc5772f7a  height=105  log2_work=14.72792  tx=138  date=2022-05-25 20:53:03 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=001bcf294ea8ea9b1b3cbee1dd1395319cd7e6520e73a77d836b81db0ba44156  height=106  log2_work=14.741467  tx=139  date=2022-05-25 20:53:09 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00425eca596a994e46c910b2ddf825fc3bae05757ad9ea4ce463fba8b0cdd160  height=107  log2_work=14.754888  tx=140  date=2022-05-25 20:53:32 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00cf753cba6eb113bd81c8898c4bb8d7521608f2a1ca7ca18d1c8b5f4a54c532  height=108  log2_work=14.768184  tx=141  date=2022-05-25 20:53:38 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00535a560e7ab67a73d537ec2f76db81393b25010f2996476005fe37592184ee  height=109  log2_work=14.78136  tx=142  date=2022-05-25 20:53:57 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00ccc703eb706d72cdc7c567bba539132a6143781b63b7d7e907b0cdbe090fd4  height=110  log2_work=14.794416  tx=143  date=2022-05-25 20:54:17 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=0008175746617972d7076a3db77da8cf303c3ee2dc580e8e13e6c056934e34da  height=111  log2_work=14.807355  tx=144  date=2022-05-25 20:54:28 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00069a4f32cd26da2cbdb016f1897efe7538658bcf7d8c1fd8630acc41d64f76  height=112  log2_work=14.820179  tx=145  date=2022-05-25 20:54:40 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=000f19b7bb823747412cad18e8edc240b963ac5b55af803edd4b0a59aa935e69  height=113  log2_work=14.83289  tx=148  date=2022-05-25 21:00:47 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00b84973dd43c05cf93e3d35efaf65763a37d9a314106c5085fc79d59a202ae6  height=114  log2_work=14.84549  tx=151  date=2022-05-25 21:01:00 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=003bb75df516ab5a9f15d2a55024a75be683f991725c0eaa3d8a3d1318b233e7  height=115  log2_work=14.857981  tx=152  date=2022-05-25 21:01:14 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=008e7072afa2556f5d2d9b3ee83d5a1f1993e1d98f089a69282150d364398f1a  height=116  log2_work=14.870365  tx=153  date=2022-05-25 21:01:22 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=004ac1a6ec6bb526023af694a785e5c4ec58e824f9d4ab39c8930bd35ed0daa5  height=117  log2_work=14.882643  tx=154  date=2022-05-25 21:01:35 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00f6f030b3604b86aed993502f1f4664bcc5a6696310619ed92cc20f4c3d1d85  height=118  log2_work=14.894818  tx=155  date=2022-05-25 21:01:45 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=000b46f3a7647b93f4b7ddeaa304610bd4da12a6fd6063cfc2da343dbd7be92d  height=119  log2_work=14.906891  tx=156  date=2022-05-25 21:01:58 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00631ab7a08c1e3950ada055d3e3c108bd7ed114f4a559897aa728270367c123  height=120  log2_work=14.918863  tx=157  date=2022-05-25 21:02:03 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=002643ad9a973cf080cfbd2e54fbdfee51b1464d2ca97c92d2629a46a73ec641  height=121  log2_work=14.930737  tx=158  date=2022-05-25 21:02:12 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00f837fe344b18d2abf7cd5aae91ad9f829dbd9bb25215ba7b81ffcf5d8badac  height=122  log2_work=14.942515  tx=159  date=2022-05-25 21:02:21 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00b55b2b2b90e0c9500975952d1f4ef363e59f36c649c007ab6c4ecdb7de8842  height=123  log2_work=14.954196  tx=160  date=2022-05-25 21:02:22 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=004df786391331b3d3800d4e524baf5f872df471a9b50362e82e2f6594c9461e  height=124  log2_work=14.965784  tx=161  date=2022-05-25 21:02:46 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00908a4215c8f50275a73d7ef87469513050e9cafef8440ecf0eff41a959467a  height=125  log2_work=14.97728  tx=166  date=2022-05-26 19:09:35 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00e9636a4e2c74a451439286db80c8ea69d7e88199b31f1ed2fb061d19a1bf69  height=126  log2_work=14.988685  tx=167  date=2022-05-26 19:09:46 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=0005c913212b056117eae46249c0e6b41081d9e78ab64d3d0b7b526cfe0eef80  height=127  log2_work=15  tx=168  date=2022-05-26 19:10:05 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=000a813370047af7e1196532f4d73b53cf26f7c91e81c0408820f3f60863605c  height=128  log2_work=15.011227  tx=169  date=2022-05-26 19:10:28 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00188f81bb696fe43bfcd4074a4313716b8965796f56b7c04c33dc7028bf63e9  height=129  log2_work=15.022368  tx=170  date=2022-05-26 19:10:40 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00f0cb0facf8f62aedd3253536e93494cb07dcc43843a4e2f9136ca32cae6a87  height=130  log2_work=15.033423  tx=171  date=2022-05-26 19:10:57 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=000577c13737cb5b2679839dffe2e01a6fe49d5b9a3a5718c9679af318a381be  height=131  log2_work=15.044394  tx=172  date=2022-05-26 19:11:14 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=007aab6d90c126448ec37d9d9cd0a6f04c096488793459e546cb48359f385cf5  height=132  log2_work=15.055282  tx=173  date=2022-05-26 19:11:31 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=00a6981506f7c08985a185b2e2bf14662eadb5bf542f878e7f5a61a6c85e4db0  height=133  log2_work=15.066089  tx=174  date=2022-05-26 19:11:46 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=002c4d65628472bcd56ca47961cb2f5222e73c23b0d494dc98edd3eb61f1eb88  height=134  log2_work=15.076816  tx=175  date=2022-05-26 19:12:08 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:43 UpdateTip:            new best=0083be66d29859b531aabdaffdf5a24491bcff25fc201110eaa1e5a6482acbb8  height=135  log2_work=15.087463  tx=176  date=2022-05-26 19:12:30 progress=1.000000  cache=0
+2022-05-29 03:13:43 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=004c0aa2779cd7380598c703cd2225329508e154ff25811d70d2e18c5dfff3aa  height=136  log2_work=15.098032  tx=179  date=2022-05-26 19:14:14 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=008b4045c041fdde8c6a82250d8c49f777b054128160859cf8d50ed1778b8273  height=137  log2_work=15.108524  tx=180  date=2022-05-26 19:14:15 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00d2d420e24ee3b7c2693f9743b47175124174614139434899fd571107cf9383  height=138  log2_work=15.118941  tx=181  date=2022-05-26 19:14:17 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00677335175896140252cbd15118b94bea1e73263ca9ab8e921e429a9b1f2f0a  height=139  log2_work=15.129283  tx=183  date=2022-05-26 19:14:20 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00e5d35f8e9f3f967e77a52c5f25217002ed950e30596d4fc751cef62e858a48  height=140  log2_work=15.139551  tx=184  date=2022-05-26 19:14:25 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=0028bbcb397ab1c218ef04fcb9cbd04ebc878a13ff3268e37bb499450eb7a602  height=141  log2_work=15.149747  tx=185  date=2022-05-26 19:14:30 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00975a078c5f587c0b2cee578a4931332409d12509aaeb78ad419abc5a48e463  height=142  log2_work=15.159871  tx=186  date=2022-05-26 19:14:34 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00dffe3ad28ded894fe8b70f0930097ebe0531636fe5d521e06f9f9e7e9f4597  height=143  log2_work=15.169925  tx=187  date=2022-05-26 19:14:51 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=0022506c5078ec6f5ff31d23b563ee7f769faed46b79160d5fd312dc9433ad90  height=144  log2_work=15.179909  tx=188  date=2022-05-26 19:15:10 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=0085cefa5d9d61f943df0d8e00108d4298873f9705ee83acf15598eec22ca2c9  height=145  log2_work=15.189825  tx=189  date=2022-05-26 19:15:35 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00c290bc838c0b5c64a2d8c121245690bc8dc17ca7f1a1f49b2221c2c1075450  height=146  log2_work=15.199672  tx=190  date=2022-05-26 19:15:56 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00d1abd0f421cb81418894601d65291f3899b543df43284d52c651d9c65e7e60  height=147  log2_work=15.209453  tx=191  date=2022-05-26 19:16:11 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=004dcfbf552962bfb470fa63ce9a73e65c5c1dfa6fd8f637f847f324c223e283  height=148  log2_work=15.219169  tx=192  date=2022-05-26 19:16:28 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=0095bd4ccecf8fcb91b44ec7fae1f300f4e83c58d97ed1f7be82a12ff611db45  height=149  log2_work=15.228819  tx=193  date=2022-05-26 19:16:41 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00f0ce487398d7552d00158567effa05b68e87905c18891b556ccb2ca8a48e34  height=150  log2_work=15.238405  tx=195  date=2022-05-28 14:45:13 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=0032ec5bb4725ef428779cc2d1b71dc3970639ccf5d50b59434055dfe173caee  height=151  log2_work=15.247928  tx=196  date=2022-05-28 14:45:16 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=0055b04eca5425466f9be3e44d1b4a0e816075a289d6daf44eb4a0e05a034dd0  height=152  log2_work=15.257388  tx=197  date=2022-05-28 14:45:23 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00e585d202ec4eba621f668f77018f2070234b7e831a78c9908ff70d1260ecc8  height=153  log2_work=15.266787  tx=198  date=2022-05-28 14:45:31 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=0058fd9f02cc6e692a3e5cf029000d042ecd86283862366a07826860f7243671  height=154  log2_work=15.276124  tx=199  date=2022-05-28 14:45:42 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00f3385dd15bf1a5e04591917f64556f2c04c3805f1eb41859f8721303cbec9b  height=155  log2_work=15.285402  tx=200  date=2022-05-28 14:45:52 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=0096477c9a4664ee03f4f2c5d3f5a3173f7b8dee670513d07cca6bfafd802dce  height=156  log2_work=15.294621  tx=201  date=2022-05-28 14:45:55 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=001918077ebeb11b6b06abdb84fce488f9705da4bf51a7b107168b200d898b49  height=157  log2_work=15.303781  tx=202  date=2022-05-28 14:46:06 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=002a3ef554de52beeb26b3b9be41b2fec025b82e98c4c71b18880691d9b7f81e  height=158  log2_work=15.312883  tx=203  date=2022-05-28 14:46:21 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=000a92a4dfb782326126d501beba20146107fdfa17e5381feb2abc7c016daea2  height=159  log2_work=15.321928  tx=204  date=2022-05-28 14:46:32 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00a47140f7ac514aaa543c12a882ae3c5c3e32e05d0fc73cc9d4673cbc1f77ce  height=160  log2_work=15.330917  tx=205  date=2022-05-28 14:46:37 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00ce32d3bc840b664c75f0246676354cc08e8f2042adef0618ca6ecbdf18545a  height=161  log2_work=15.33985  tx=206  date=2022-05-29 02:49:51 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00afd72030713a9d4018b8673a77f5d8d4fc6ff11cb555ed24a13ff38afd7192  height=162  log2_work=15.348728  tx=207  date=2022-05-29 02:50:03 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00812f3b80f837d4043fde5dcc64a77a833d634a1857a808b1327b989e84c81f  height=163  log2_work=15.357552  tx=208  date=2022-05-29 02:50:14 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00130de879406e695d0a799b59f38f3a226b615a47f53976e0ee87732d2802a0  height=164  log2_work=15.366322  tx=209  date=2022-05-29 02:50:24 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00636d28ab26b008563da5abdb9ba23ab58d52cfc7e332c559f5988cb3c601fc  height=165  log2_work=15.375039  tx=210  date=2022-05-29 02:50:29 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00c38939c08ac4e7b191a131068d674846e562a3212621de0a1fc8e078a9bb93  height=166  log2_work=15.383704  tx=211  date=2022-05-29 02:50:35 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00c93323710ad1d9d452354b0cf6c39cbe8a8f1183830e48b87dd79a4774bab5  height=167  log2_work=15.392317  tx=212  date=2022-05-29 02:50:51 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=00e89ff165e1381b203dfe35a21177efe2e45b6947eb18d8ef460915210ee2d5  height=168  log2_work=15.400879  tx=213  date=2022-05-29 02:51:03 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:44 UpdateTip:            new best=009ce385ee025321ea99171fa7f114f7e6ef54bb98a8c97bd13684c0ace7468a  height=169  log2_work=15.409391  tx=214  date=2022-05-29 02:51:10 progress=1.000000  cache=0
+2022-05-29 03:13:44 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=006bcfb954c05425af3c30218f57433cd38564fb78d94a7e6e0e32f78616a2ac  height=170  log2_work=15.417853  tx=215  date=2022-05-29 02:51:26 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00f0a3d6080d06f213cfad36d433a1b24c032957380c9985ffa3aeb89b389f7c  height=171  log2_work=15.426265  tx=216  date=2022-05-29 02:51:39 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=005fa13ac8739ce6b4aa7c1f5f2d2341548cbf15808a7ed3655d9d7775da3218  height=172  log2_work=15.434628  tx=217  date=2022-05-29 02:51:46 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00dc90c2f159eb3e582ee0757b2c611d80aadb8ce45831d8e717d21807aa74c5  height=173  log2_work=15.442943  tx=218  date=2022-05-29 02:52:13 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=0050aa677332350970bbac2b0e0aabfcefcaa56508948199d200dbce4f463494  height=174  log2_work=15.451211  tx=219  date=2022-05-29 02:52:39 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00945650221cf4ce97db7414d657e11496a43c2d6b382d6b4425c27e02f2fac0  height=175  log2_work=15.459432  tx=220  date=2022-05-29 02:52:49 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00a9a15f71bd548947017ab706192c69caca97c9b11d03d76fbebd6d3a28fd06  height=176  log2_work=15.467606  tx=221  date=2022-05-29 02:53:08 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=004815e42bc98bd36d9a7181b2008d263dfa3dc0234769e705c9a406d0b283bf  height=177  log2_work=15.475733  tx=222  date=2022-05-29 02:53:11 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00ed84bde4f1e5741c8c1372ba376e03de85efb11686b9eb9a66dd28382e5497  height=178  log2_work=15.483816  tx=224  date=2022-05-29 02:55:45 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=0071e5e1dc14cb13b57927ca3274ea56150cb857266ef9357e4b2d40b7e9c888  height=179  log2_work=15.491853  tx=225  date=2022-05-29 02:55:47 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=0087aac9516ee0bcf64d641701b24b28f492400eb32300e5dad62f9a768f62e3  height=180  log2_work=15.499846  tx=226  date=2022-05-29 02:55:58 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00bfb32f18f8c4414b219a6f0a23d9f4ec0ea5b91043507a036fd85010926c49  height=181  log2_work=15.507795  tx=227  date=2022-05-29 02:56:00 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00730c47c4576129e526e5e5c51438541df6f012fab1cdccad654771c6eb99b4  height=182  log2_work=15.5157  tx=228  date=2022-05-29 02:56:09 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=0061013c4a581e2a50cf9507166f48fe25bfa2891cbdf1abf4933a27cd979fca  height=183  log2_work=15.523562  tx=229  date=2022-05-29 02:56:11 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00e193c280139c749bff55674037b55b3139b0825c9cbc202624a19d1592cc7a  height=184  log2_work=15.531381  tx=230  date=2022-05-29 02:56:24 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=002ae9369776883f37629d84e2b0bf657c630ecb192b2073ae54bcd03d1c440c  height=185  log2_work=15.539159  tx=231  date=2022-05-29 02:56:28 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=0019e5084958086b851481475e33892b2fe88da2fbd37c1801d5daf5ca154d47  height=186  log2_work=15.546894  tx=232  date=2022-05-29 02:56:38 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=004c68aaca48844870f059c15a0cc982597076e0dfd8b7e4e0db7d056d62158c  height=187  log2_work=15.554589  tx=233  date=2022-05-29 02:57:01 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00e528f8835d8e417c7ee7625f6c787d43cd289ea649775489fb2208508a352e  height=188  log2_work=15.562242  tx=234  date=2022-05-29 02:57:15 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00cc4a9d3a02942b4d62faeba2a704c2bae3383ffc1526165ddd17863a14fbee  height=189  log2_work=15.569856  tx=237  date=2022-05-29 02:59:13 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=009466a0fdadc6e993546d1fa7dd3ddc1270781839cf73c7e993d3ee19c24052  height=190  log2_work=15.577429  tx=238  date=2022-05-29 02:59:22 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=0071683d428409166eff539fe304774fb04ab170e506ec837ed885ecc8f80385  height=191  log2_work=15.584963  tx=239  date=2022-05-29 02:59:26 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00c46b4e76db0e2dadb52576a4b38fb53ff210859c624a152f60251c706e705e  height=192  log2_work=15.592457  tx=240  date=2022-05-29 02:59:27 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=0004ff366ebaecc63274d6eaab2b481242ce57f94402cf28f189b2fdd1997b47  height=193  log2_work=15.599913  tx=241  date=2022-05-29 02:59:42 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00d5215b47fb5fcf910a7509f6090eda417af9898f3dd6d2ea01455e2d01463d  height=194  log2_work=15.60733  tx=242  date=2022-05-29 02:59:53 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00568cd93435137d7f8c8a2319924b117d016a690981db7a9d647923955f25d4  height=195  log2_work=15.61471  tx=243  date=2022-05-29 02:59:57 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00c1094ffa048f5c8435dd55c5cda4111aa8ecdae45fc3fcf278cbbfca020baf  height=196  log2_work=15.622052  tx=244  date=2022-05-29 03:00:03 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=001ceba84ad679360a5af9f3ae02f5efc6f6a3f4edd219347416fb1f2f4b0511  height=197  log2_work=15.629357  tx=245  date=2022-05-29 03:00:16 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=005c2879651f7c70bc9611bc10a3cf914b43fad77f947fe10b1ad005ceec59a9  height=198  log2_work=15.636625  tx=246  date=2022-05-29 03:00:40 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00bdcaa52c0eef391bb0b70bd6a75236a2665b2d624e3e77b2679759b085f53a  height=199  log2_work=15.643856  tx=247  date=2022-05-29 03:00:53 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=001362ccc955f93a7cce44b32cae498d003bf0bd0f48bfe0e54475286f8ecd7d  height=200  log2_work=15.651052  tx=249  date=2022-05-29 03:09:45 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00f149ac27d82e8fdb63189f593ba83c985a67d435ccd1c895c104b796b9b989  height=201  log2_work=15.658211  tx=250  date=2022-05-29 03:09:59 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=002a1d2bb0b3c0b66517907283ee48a3162c7743fe5ba9ad3c52d4e9ba9215b1  height=202  log2_work=15.665336  tx=251  date=2022-05-29 03:10:00 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:45 UpdateTip:            new best=00cd529a4bb158fb3012b5f971e715f7c8e0ab5157ad7e3a8906f79e0a61ac96  height=203  log2_work=15.672425  tx=252  date=2022-05-29 03:10:05 progress=1.000000  cache=0
+2022-05-29 03:13:45 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:46 UpdateTip:            new best=00709a0f4e4bc535f3dd23c4f95e8b983a3647d601ff788522e2e4d4da84f3df  height=204  log2_work=15.67948  tx=253  date=2022-05-29 03:10:13 progress=1.000000  cache=0
+2022-05-29 03:13:46 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:46 UpdateTip:            new best=00399a986da025cabddad87533e85dbb07de3a65eba6c74b30b463aa0e35f9b4  height=205  log2_work=15.686501  tx=254  date=2022-05-29 03:10:23 progress=1.000000  cache=0
+2022-05-29 03:13:46 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:46 UpdateTip:            new best=008eb70a5c02a46861c69888b767f4ae99e1dc8763a147f5f19c9417eadffcc9  height=206  log2_work=15.693487  tx=255  date=2022-05-29 03:10:35 progress=1.000000  cache=0
+2022-05-29 03:13:46 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:46 UpdateTip:            new best=0053595cc9b16d826163750cf0c2fe397a0a5c4fa8d82f4d65bfe120ef31c422  height=207  log2_work=15.70044  tx=256  date=2022-05-29 03:10:44 progress=1.000000  cache=0
+2022-05-29 03:13:46 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:46 UpdateTip:            new best=006793119abf14938e517357cef76ba0387c7eaf301ad8163e597145d8950383  height=208  log2_work=15.707359  tx=257  date=2022-05-29 03:10:55 progress=1.000000  cache=0
+2022-05-29 03:13:46 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:46 UpdateTip:            new best=00a4af19eae114070282a5ebf76ce4c7134dbd3ae49f20e7985c138b986fa97e  height=209  log2_work=15.714246  tx=258  date=2022-05-29 03:11:01 progress=1.000000  cache=0
+2022-05-29 03:13:46 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:46 UpdateTip:            new best=004bb1b5f8fb76c9afc55dab407eb4cf798a875dcc449bc80082a6ca483c40fe  height=210  log2_work=15.721099  tx=259  date=2022-05-29 03:11:12 progress=1.000000  cache=0
+2022-05-29 03:13:46 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:13:46 mchn: Synced with node 1 on block 210 - requesting mempool
+2022-05-29 03:13:46 mchn: Synced with seed node on block 210
+2022-05-29 03:13:51 Loading addresses from DNS seeds (could take a while)
+2022-05-29 03:13:51 0 addresses found from DNS seeds
+2022-05-29 03:13:51 dnsseed thread exit
+2022-05-29 03:14:16 mchn: Granting send,receive permission(s) to address 1DjbciMDV5Jt8eQHaXUKifQYWeH41L9vfBYecb (0-4294967295)
+2022-05-29 03:14:16 CommitTransaction: b63d2686a25a8be6b1ca24f2a337eee9dd384adc9164b22980c0d5f18efcfb91, vin: 1, vout: 2
+2022-05-29 03:14:16 CommitTransaction: 8703f462f2de718f6022317e7626c7bc43c21a61eac0e5af3df0086cb4adbcd7, vin: 1, vout: 3
+2022-05-29 03:14:22 CommitTransaction: d485418c7f699d49da3344ec1907767d81f1a8e2d7d6f958ca58fc7e52c284c1, vin: 1, vout: 3
+2022-05-29 03:14:25 keypool added key 3, size=2
+2022-05-29 03:14:30 MultiChainMiner: Block Found - 008fb7e1f08296da2a95c7bbf26d35810436a44d8460c483667d727d19fff2e0, prev: 004bb1b5f8fb76c9afc55dab407eb4cf798a875dcc449bc80082a6ca483c40fe, height: 211, txs: 4
+2022-05-29 03:14:31 UpdateTip:            new best=008fb7e1f08296da2a95c7bbf26d35810436a44d8460c483667d727d19fff2e0  height=211  log2_work=15.72792  tx=263  date=2022-05-29 03:14:30 progress=1.000000  cache=0
+2022-05-29 03:14:31 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:14:40 UpdateTip:            new best=0078fbe7e1dddc29bbf476adb1243718947a443b5968bb920e15a2e57a657940  height=212  log2_work=15.73471  tx=264  date=2022-05-29 03:14:39 progress=1.000000  cache=0
+2022-05-29 03:14:40 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:14:47 UpdateTip:            new best=00d7864254d5d0876048cd4763ffdf665605f74cbda58197f8da73c9cdfc49ae  height=213  log2_work=15.741467  tx=265  date=2022-05-29 03:14:47 progress=1.000000  cache=0
+2022-05-29 03:14:47 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:14:59 MultiChainMiner: Block Found - 0019ca44523d967c923bfb2c5331751d5253a6ab368a3d584c1d79e90c58191c, prev: 00d7864254d5d0876048cd4763ffdf665605f74cbda58197f8da73c9cdfc49ae, height: 214, txs: 1
+2022-05-29 03:14:59 UpdateTip:            new best=0019ca44523d967c923bfb2c5331751d5253a6ab368a3d584c1d79e90c58191c  height=214  log2_work=15.748193  tx=266  date=2022-05-29 03:14:59 progress=1.000000  cache=0
+2022-05-29 03:14:59 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:15:01 CommitTransaction: e74dc7977b4b4860c3f3dfbce989261e5ff542cd85538df79c31d2aabbbb58db, vin: 1, vout: 3
+2022-05-29 03:15:02 UpdateTip:            new best=002556abedb9c217c9f6e1b419a08eefb8fc25759974ecb7855df60205eaac2a  height=215  log2_work=15.754888  tx=268  date=2022-05-29 03:15:01 progress=1.000000  cache=0
+2022-05-29 03:15:02 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:15:10 UpdateTip:            new best=0087e1a1d02c11ed86730111ffb42f63222365295817ce773f1743dab0f2ba76  height=216  log2_work=15.761551  tx=269  date=2022-05-29 03:15:10 progress=1.000000  cache=0
+2022-05-29 03:15:10 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 03:15:11 addcon thread interrupt
+2022-05-29 03:15:11 msghand thread interrupt
+2022-05-29 03:15:11 dumpaddr thread stop
+2022-05-29 03:15:11 opencon thread interrupt
+2022-05-29 03:15:11 net thread interrupt
+2022-05-29 03:15:11 Shutdown: In progress...
+2022-05-29 03:15:11 MultiChainMiner terminated
+2022-05-29 03:15:11 StopNode()
+2022-05-29 03:15:11 Node stopped
+2022-05-29 03:15:11 Shutdown: done
