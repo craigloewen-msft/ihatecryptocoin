@@ -1,14 +1,19 @@
 #!/usr/bin/env bash
 
-if [[ ! -d ./.multichain ]]
-then
-    cp -r ./multichain-dev-original ./.multichain
-fi
+rm -rf ./.multichain
 
 if [[ ! -z "${MULTICHAIN_CONNECT_ADDRESS}" ]]; then
     echo "Connecting to server remotely";
-    ./multichaind $MULTICHAIN_CONNECT_ADDRESS -server=1 -rpcbind=127.0.0.1 -rpcuser=multichainrpc -rpcpassword=devpassword
+    if [[ ! -d ./.multichain ]]
+    then
+        cp -r ./multichain-prod ./.multichain
+    fi
+    ./multichaind ihatecryptocoin@$(dig +short $MULTICHAIN_CONNECT_ADDRESS | tail -n1):$MULTICHAIN_CONNECT_PORT -datadir=./.multichain
 else
+    if [[ ! -d ./.multichain ]]
+    then
+        cp -r ./multichain-dev-original ./.multichain
+    fi
     echo "Running server directly";
     ./multichaind ihatecryptocoin -datadir=./.multichain
 fi

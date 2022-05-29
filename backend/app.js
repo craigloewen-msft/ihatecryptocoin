@@ -30,7 +30,7 @@ if (process.env.NODE_ENV == 'production') {
   mongooseConnectionString = config.mongoDBConnectionString;
   hostPort = process.env.PORT || 3000;
   console.log("Running in dev mode");
-} 
+}
 
 // Multichain connect set up
 
@@ -46,7 +46,8 @@ let coinName = "ihatecryptocoin";
 let coinUnits = 0.01;
 
 async function setUpMultichain() {
-  let importaddressrresponse = await multichain.importAddress({ address: config.adminMultichainAddress});
+  console.log("Setting up chain params!");
+  let importaddressrresponse = await multichain.importAddress({ address: config.adminMultichainAddress });
   let privkeyresponse = await multichain.importPrivKey({ privkey: config.adminMultichainPrivKey });
 }
 
@@ -147,18 +148,23 @@ function getUserFromUsername(inputUsername, callback) {
 }
 
 async function getUserCoinCount(inputWallet) {
-  let totalBalance = await multichain.getAddressBalances({ address: inputWallet.address });
-  let balanceResult = 0;
+  try {
+    let totalBalance = await multichain.getAddressBalances({ address: inputWallet.address });
+    let balanceResult = 0;
 
-  // Look for coin name and get balance
-  for (let i = 0; i < totalBalance.length; i++) {
-    let balanceVisitor = totalBalance[i];
-    if (balanceVisitor.name == coinName) {
-      balanceResult = balanceVisitor.qty;
+    // Look for coin name and get balance
+    for (let i = 0; i < totalBalance.length; i++) {
+      let balanceVisitor = totalBalance[i];
+      if (balanceVisitor.name == coinName) {
+        balanceResult = balanceVisitor.qty;
+      }
     }
-  }
 
-  return balanceResult;
+    return balanceResult;
+  } catch (error) {
+    console.log("Couldn't resolve");
+    return 0;
+  }
 }
 
 async function refreshUserCoinCount(inputWallet) {
@@ -214,30 +220,34 @@ const connectEnsureLogin = require('connect-ensure-login');
 
 app.post('/api/login', (req, res, next) => {
   console.log("Logging in!");
-  passport.authenticate('local',
-    (err, user, info) => {
-      if (err) {
-        return res.json(returnFailure('Server error while authenticating'));
-      }
-
-      if (!user) {
-        return res.json(returnFailure('Failure to login'));
-      }
-
-      req.logIn(user, function (err) {
+  try {
+    passport.authenticate('local',
+      (err, user, info) => {
         if (err) {
+          return res.json(returnFailure('Server error while authenticating'));
+        }
+
+        if (!user) {
           return res.json(returnFailure('Failure to login'));
         }
 
-        let token = jwt.sign({ id: user.username }, config.secret, { expiresIn: JWTTimeout });
+        req.logIn(user, function (err) {
+          if (err) {
+            return res.json(returnFailure('Failure to login'));
+          }
 
-        returnBasicUserInfo(user.username, (userDataResponse) => {
-          let response = { success: true, auth: true, token: token, user: userDataResponse };
-          return res.json(response);
+          let token = jwt.sign({ id: user.username }, config.secret, { expiresIn: JWTTimeout });
+
+          returnBasicUserInfo(user.username, (userDataResponse) => {
+            let response = { success: true, auth: true, token: token, user: userDataResponse };
+            return res.json(response);
+          });
         });
-      });
 
-    })(req, res, next);
+      })(req, res, next);
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.get('/api/user/:username/', authenticateToken, (req, res) => {
@@ -293,9 +303,13 @@ app.post('/api/register', async function (req, res) {
           let privateKey = createdKeyPair[0].privkey;
 
           // Add in the initial coins
+          try {
           let permissionsRequest = await multichain.grant({ addresses: createdAddress, permissions: "send,receive" });
           let importRequest = await multichain.importAddress({ address: createdAddress, rescan: false });
           let issueRequest = await multichain.issueMore({ address: createdAddress, asset: coinName, qty: 5, units: coinUnits });
+          } catch (error) {
+            console.log(error);
+          }
 
           // We are storing a private key without hashing or salting. It's bad security practice but luckily this app is just for fun.
           var walletInstance = new WalletDetails({

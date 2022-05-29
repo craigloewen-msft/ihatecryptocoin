@@ -27,8 +27,8 @@
           >
         </li>
         <li>
-          Connect to a IHateCryptoCoin node by running: <br />
-          <code>multichaind ihatecryptocoin@gitgudissuesdb.westus.cloudapp.azure.com:2765 -daemon</code>
+          Connect to a IHateCryptoCoin node by running in a bash shell: <br />
+          <code>multichaind ihatecryptocoin@$(dig +short gitgudissuesdb.westus.cloudapp.azure.com | tail -n1):2765 -daemon</code>
         </li>
         <li>
           Ensure that your node is running correctly by seeing

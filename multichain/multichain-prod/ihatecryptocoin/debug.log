@@ -1,0 +1,335 @@
+2022-05-29 00:06:06 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2022-05-29 00:06:06 MultiChain version build 2.2.1 protocol 20013 (Jun  2 2021, 09:39:46)
+2022-05-29 00:06:06 Using OpenSSL version OpenSSL 1.0.1h 5 Jun 2014
+2022-05-29 00:06:06 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2022-05-29 00:06:06 Default data directory /root/.multichain/ihatecryptocoin
+2022-05-29 00:06:06 Using data directory /root/.multichain/ihatecryptocoin
+2022-05-29 00:06:06 Using config file /root/.multichain/ihatecryptocoin/ihatecryptocoin.conf
+2022-05-29 00:06:06 Using at most 125 connections (1048576 file descriptors available)
+2022-05-29 00:06:06 Using 16 threads for script verification
+2022-05-29 00:06:06 Using wallet wallet.dat
+2022-05-29 00:06:06 init message: Verifying wallet...
+2022-05-29 00:06:06 Wallet file doesn't exist. New file will be created with version 3.
+2022-05-29 00:06:06 Binding RPC on address ::1 port 8570 (IPv4+IPv6 bind any: 0)
+2022-05-29 00:06:06 ERROR: Binding RPC on address ::1 port 8570 failed: bind: Cannot assign requested address
+2022-05-29 00:06:06 Binding RPC on address 127.0.0.1 port 8570 (IPv4+IPv6 bind any: 0)
+2022-05-29 00:06:06 init message: Initializing multichain...
+2022-05-29 00:06:06 nFileVersion = 0
+2022-05-29 00:06:06 Keys: 0 plaintext, 0 encrypted, 0 w/ metadata, 0 total
+2022-05-29 00:06:06 mchn: Default key is not found - creating new... 
+2022-05-29 00:06:06 keypool added key 1, size=1
+2022-05-29 00:06:06 keypool added key 2, size=2
+2022-05-29 00:06:06 mchn: Checking seed address gitgudissuesdb.westus.cloudapp.azure.com:2765
+2022-05-29 00:06:06 mchn: Seed address resolved: 52.180.68.180:2765
+2022-05-29 00:06:06 mchn: Parameter set is not complete - starting paramset discovery thread...
+2022-05-29 00:06:06 init message: Loading addresses...
+2022-05-29 00:06:06 Loaded 0 addresses from peers.dat  0ms
+2022-05-29 00:06:06 AddLocal(172.21.0.2:8571,1)
+2022-05-29 00:06:06 Discover: IPv4 eth0: 172.21.0.2
+2022-05-29 00:06:06 dnsseed thread start
+2022-05-29 00:06:06 Loading addresses from DNS seeds (could take a while)
+2022-05-29 00:06:06 0 addresses found from DNS seeds
+2022-05-29 00:06:06 dnsseed thread exit
+2022-05-29 00:06:06 net thread start
+2022-05-29 00:06:06 addcon thread start
+2022-05-29 00:06:06 opencon thread start
+2022-05-29 00:06:06 Seed node is set, trying to connect to 52.180.68.180:2765...
+2022-05-29 00:06:06 msghand thread start
+2022-05-29 00:06:06 dumpaddr thread start
+2022-05-29 00:06:07 mchn: Connection from 16WS5BmRHVCs6EyDN67zsgfi3qkQUMp3ME received on peer=1 in verack
+2022-05-29 00:06:07 mchn: Successfully stored parameter set received from 52.180.68.180:2765
+2022-05-29 00:06:07 addcon thread interrupt
+2022-05-29 00:06:07 opencon thread interrupt
+2022-05-29 00:06:07 dumpaddr thread stop
+2022-05-29 00:06:07 msghand thread interrupt
+2022-05-29 00:06:07 net thread interrupt
+2022-05-29 00:06:07 mchn: Exited from paramset discovery thread
+2022-05-29 00:06:07 mchn: Parameter set is valid - initializing blockchain parameters...
+2022-05-29 00:06:07 Wallet mode: 00000103
+2022-05-29 00:06:07 Node paused state is set to 00000000
+2022-05-29 00:06:07 Bound to [::]:2765
+2022-05-29 00:06:07 Bound to 0.0.0.0:2765
+2022-05-29 00:06:07 Filter initialization completed
+2022-05-29 00:06:07 Setting banned transaction list:    0 transactions
+2022-05-29 00:06:07 init message: Loading block index...
+2022-05-29 00:06:07 Opening LevelDB in /root/.multichain/ihatecryptocoin/blocks/index
+2022-05-29 00:06:07 Opened LevelDB successfully
+2022-05-29 00:06:07 Opening LevelDB in /root/.multichain/ihatecryptocoin/chainstate
+2022-05-29 00:06:07 Opened LevelDB successfully
+2022-05-29 00:06:07 nFileVersion = 100000
+2022-05-29 00:06:07 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-29 00:06:07 LoadBlockIndexDB: last block file = 0
+2022-05-29 00:06:07 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2022-05-29 00:06:07 Checking all blk files are present...
+2022-05-29 00:06:07 LoadBlockIndexDB(): transaction index disabled
+2022-05-29 00:06:07 Initializing databases...
+2022-05-29 00:06:07 Pre-allocating up to position 0x1000000 in blk00000.dat
+2022-05-29 00:06:07 New stream. TxID: 6ab1e592187e900ad0fa7f6c54a96f712e11dd2e4d409d0467ef61e2f6ef224d, StreamRef: 0-81-8781, Name: root
+2022-05-29 00:06:07 UpdateTip:            new best=0063804a067de6adbe4fd7129f8b9989946fd44628c8aad6fe135da580831d4a  height=0  log2_work=8  tx=1  date=2022-05-25 20:25:46 progress=1.000000  cache=0
+2022-05-29 00:06:07 init message: Verifying blocks...
+2022-05-29 00:06:07  block index              68ms
+2022-05-29 00:06:07 MultiChain protocol version: 20012
+2022-05-29 00:06:07 init message: Loading wallet...
+2022-05-29 00:06:07 nFileVersion = 100000
+2022-05-29 00:06:07 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-29 00:06:07  wallet                    0ms
+2022-05-29 00:06:07 mapBlockIndex.size() = 1
+2022-05-29 00:06:07 nBestHeight = 0
+2022-05-29 00:06:07 setKeyPool.size() = 1
+2022-05-29 00:06:07 oldWallet.size() = 0
+2022-05-29 00:06:07 mapWallet.size() = 1
+2022-05-29 00:06:07 mapAddressBook.size() = 1
+2022-05-29 00:06:07 init message: Loading addresses...
+2022-05-29 00:06:07 Invalid or missing peers.dat; recreating
+2022-05-29 00:06:07 Loaded 0 addresses from peers.dat  0ms
+2022-05-29 00:06:07 AddLocal(172.21.0.2:2765,1)
+2022-05-29 00:06:07 Discover: IPv4 eth0: 172.21.0.2
+2022-05-29 00:06:07 net thread start
+2022-05-29 00:06:07 addcon thread start
+2022-05-29 00:06:07 dnsseed thread start
+2022-05-29 00:06:07 Loading addresses from DNS seeds (could take a while)
+2022-05-29 00:06:07 0 addresses found from DNS seeds
+2022-05-29 00:06:07 dnsseed thread exit
+2022-05-29 00:06:07 msghand thread start
+2022-05-29 00:06:07 opencon thread start
+2022-05-29 00:06:07 Seed node is set, trying to connect to 52.180.68.180:2765...
+2022-05-29 00:06:07 init message: Reaccepting unconfirmed wallet transactions...
+2022-05-29 00:06:07 dumpaddr thread start
+2022-05-29 00:06:07 MultiChainMiner started
+2022-05-29 00:06:07 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:07 init message: Done loading
+2022-05-29 00:06:07 MultiChainMiner: Block Found - 00942bfa28c434535ec042033e57a94a23005131255ba608922a23a9dee26447, prev: 0063804a067de6adbe4fd7129f8b9989946fd44628c8aad6fe135da580831d4a, height: 1, txs: 1
+2022-05-29 00:06:07 Pre-allocating up to position 0x100000 in rev00000.dat
+2022-05-29 00:06:07 Node started
+2022-05-29 00:06:07 UpdateTip:            new best=00942bfa28c434535ec042033e57a94a23005131255ba608922a23a9dee26447  height=1  log2_work=9  tx=2  date=2022-05-29 00:06:07 progress=1.000000  cache=0
+2022-05-29 00:06:07 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:07 MultiChainMiner: Block Found - 003e97b102f25e4896a5df7c03430cfd21232e9278979077903e3e3007766201, prev: 00942bfa28c434535ec042033e57a94a23005131255ba608922a23a9dee26447, height: 2, txs: 1
+2022-05-29 00:06:07 UpdateTip:            new best=003e97b102f25e4896a5df7c03430cfd21232e9278979077903e3e3007766201  height=2  log2_work=9.5849625  tx=3  date=2022-05-29 00:06:08 progress=1.000000  cache=0
+2022-05-29 00:06:07 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:07 mchn: Sending minimal parameter set to 52.180.68.180:2765
+2022-05-29 00:06:07 receive version message: /MultiChain:0.2.0.13/: version 70002, blocks=160, us=100.8.207.162:59140, peer=2
+2022-05-29 00:06:07 Added time data, samples 2, offset +0 (+0 minutes)
+2022-05-29 00:06:07 mchn: Parameter set from peer=2 verified
+2022-05-29 00:06:08 Accepted header for block 00cc7241a6c41c414ca6f5234c8d87008b1b4cd1a60d15b8300f4532c77478c1 found on alternative chain at height 1
+2022-05-29 00:06:08 Accepted header for block 00a5b9092f8ab95c7cfe9da415a9f3b08c9568514eb5b924a77439cb74c71b7e found on alternative chain at height 2
+2022-05-29 00:06:08 Accepted header for block 00b8f13701a5dfba9effe28eb57ad86196d839d77746e4ce15afec464f4ed711 found on alternative chain at height 3
+2022-05-29 00:06:08 Tx not accepted in resurrection after block: d3fb46957271968baf11c1eec9e4c4255f8bdd9369b38daf38a05e4abdd135c0
+2022-05-29 00:06:08 UpdateTip:            new best=00942bfa28c434535ec042033e57a94a23005131255ba608922a23a9dee26447  height=1  log2_work=9  tx=2  date=2022-05-29 00:06:07 progress=1.000000  cache=0
+2022-05-29 00:06:08 Tx not accepted in resurrection after block: 9d4ff3598693c5abd0b28fc9ca04d3ca80d068eb0cce320220b619269947370a
+2022-05-29 00:06:08 UpdateTip:            new best=0063804a067de6adbe4fd7129f8b9989946fd44628c8aad6fe135da580831d4a  height=0  log2_work=8  tx=1  date=2022-05-25 20:25:46 progress=1.000000  cache=0
+2022-05-29 00:06:08 UpdateTip:            new best=00cc7241a6c41c414ca6f5234c8d87008b1b4cd1a60d15b8300f4532c77478c1  height=1  log2_work=9  tx=2  date=2022-05-25 20:25:47 progress=1.000000  cache=0
+2022-05-29 00:06:08 UpdateTip:            new best=00a5b9092f8ab95c7cfe9da415a9f3b08c9568514eb5b924a77439cb74c71b7e  height=2  log2_work=9.5849625  tx=3  date=2022-05-25 20:25:48 progress=1.000000  cache=0
+2022-05-29 00:06:08 UpdateTip:            new best=00b8f13701a5dfba9effe28eb57ad86196d839d77746e4ce15afec464f4ed711  height=3  log2_work=10  tx=4  date=2022-05-25 20:25:59 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=00dfed3d07a359b5246f3063240d148b05867ceb9d65c606460c3853a7efc45f  height=4  log2_work=10.321928  tx=5  date=2022-05-25 20:26:14 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=00bf16b503dd33f5af7d221f519e20c677820a4ece407b6fb6c7e9809f0bcb7e  height=5  log2_work=10.584963  tx=6  date=2022-05-25 20:26:30 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=007fa12fec7198d417de62a43a570107bf315ea89f510bd138dd7e951054eb9a  height=6  log2_work=10.807355  tx=7  date=2022-05-25 20:26:40 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=007af87a6b81bf714877237b8d34f75e8661ce6bb738f29dd9b2ed37ebfd210f  height=7  log2_work=11  tx=8  date=2022-05-25 20:26:50 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=0085aca8bbf26f84074cbddcefe11ca7eec79c2eace57cf3ff97f87dbf56e5c3  height=8  log2_work=11.169925  tx=9  date=2022-05-25 20:27:03 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=002d03046173463cffeb949ff3ceed466f103e1d68dde95ec06ff7136d5726e3  height=9  log2_work=11.321928  tx=10  date=2022-05-25 20:27:19 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=008fafc82ac04f8e522cf495c00c7103c57c065ed92c62aeaa8f38e9314b711e  height=10  log2_work=11.459432  tx=11  date=2022-05-25 20:27:31 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=0050db757c5908dca2753167a3e48daded951330757c233d11a1185483ef3a61  height=11  log2_work=11.584963  tx=12  date=2022-05-25 20:27:41 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=0018d722d5052c9d0f47f62ab5ffeb61c5cbf46a1caca4f214e3d5c3e019affa  height=12  log2_work=11.70044  tx=13  date=2022-05-25 20:27:52 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=00b3c4dc10eb9be3458eb120353945e659fbe047c2dbeb6ce2bb5cd24103ec80  height=13  log2_work=11.807355  tx=14  date=2022-05-25 20:28:18 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=002195831ebdb3723ae480384a12a4bab3f3d36290a18e38e18cd8cf93256880  height=14  log2_work=11.906891  tx=15  date=2022-05-25 20:28:38 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=00d122d8007e24058ac7c190df10ddfc1a042e0cd18f4a5ef7b6cccb76b3f22c  height=15  log2_work=12  tx=16  date=2022-05-25 20:28:47 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=00976fc98ccc261e8951c9fd110eb11bc3bfb11cc269766f1a4186cf1a0cee83  height=16  log2_work=12.087463  tx=17  date=2022-05-25 20:28:58 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=0010f64e853963026576267559c65b98a9821957c8049475a2541971cb20c59c  height=17  log2_work=12.169925  tx=18  date=2022-05-25 20:29:13 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=001d9ec8755fc392ac1904a5fdf7d8722990c68ac0f6e4255cf7c4d11fc8c085  height=18  log2_work=12.247928  tx=19  date=2022-05-25 20:29:39 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=0025c21b63a347a903aa470241e3f11566af3af640c79afb1d1d2709f952d317  height=19  log2_work=12.321928  tx=21  date=2022-05-25 20:30:01 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=00d7313f3a9a6e4d345a471f5670eae3b0b775bfa5330041a3532445d335d927  height=20  log2_work=12.392317  tx=22  date=2022-05-25 20:30:14 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=00556ab9790d9f44be8b4728f51a4c1e3b06a6b60254c42278f5e8b2e9ce38c0  height=21  log2_work=12.459432  tx=23  date=2022-05-25 20:30:19 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:08 UpdateTip:            new best=00febfc55b4ea795f4fa84d50e95917b9323c917970ba8fe6e47a747463811de  height=22  log2_work=12.523562  tx=24  date=2022-05-25 20:30:38 progress=1.000000  cache=0
+2022-05-29 00:06:08 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00f2444341efc2366930d41934c74b93f003a78ba450d5ccf1bb310a5ff9a818  height=23  log2_work=12.584963  tx=25  date=2022-05-25 20:30:43 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00dae3f9a403cc906b9055017ac54e344fe4489117bf68f6ed778d27ea0d00a8  height=24  log2_work=12.643856  tx=26  date=2022-05-25 20:31:03 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00ec9378903ff7251c27226f74fc6046f4d9c51d8e5403d34e8319f632c6e89e  height=25  log2_work=12.70044  tx=27  date=2022-05-25 20:31:16 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00cd84e9e56481470d8c83b04acd7add0dad776c9d88b90dcb04ab97d0b10951  height=26  log2_work=12.754888  tx=28  date=2022-05-25 20:31:28 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00aec3c722a85b8a90579affec0b476f76a436a4246611f7fc9d8eaa1ebf1a5a  height=27  log2_work=12.807355  tx=29  date=2022-05-25 20:31:44 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00260900e5a215dae96b7e7eedaac8b7614f6963b7e49b6236a78d436cb39f2d  height=28  log2_work=12.857981  tx=30  date=2022-05-25 20:32:06 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00d841a669cdf119c8181cc35e7bc61d64c030f900b958c302b39734a87c428d  height=29  log2_work=12.906891  tx=31  date=2022-05-25 20:32:24 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00792db317ce412a88bbd50f2bc5dbe5af0c63ef2226fa6fc1efb6c428b4ff56  height=30  log2_work=12.954196  tx=32  date=2022-05-25 20:32:35 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00797f52dba31a78bbf3c247f234f873f5b331ebe90ff1166b8306d6bf4d0f6b  height=31  log2_work=13  tx=33  date=2022-05-25 20:32:45 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00a6863d0bfc5b3b57926febf53cf4e4bdeefbd9df9c6a1c76198337d0441a37  height=32  log2_work=13.044394  tx=35  date=2022-05-25 20:33:02 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=006c59b176e825e23547a5051152a54d2aebc09c40ca20b26d8c096f58d0b47a  height=33  log2_work=13.087463  tx=39  date=2022-05-25 20:33:18 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00727e67650cace41049dae5bf6be2358ac254b083c75a6744d27a3c1f776c86  height=34  log2_work=13.129283  tx=43  date=2022-05-25 20:33:37 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=0072d905397a08b540a0fe8dc1ac9f145937b4f5ad4a4d66b8f68102b726c180  height=35  log2_work=13.169925  tx=47  date=2022-05-25 20:33:53 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=006339ef2d697b6a8ed88a5a9b4e8fcd8e3e2198174355eee8712ec1607b818b  height=36  log2_work=13.209453  tx=50  date=2022-05-25 20:34:05 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00c1e1a43799addd17e4752dcbc617863ed6d273bb80fa058ee74b804a719a13  height=37  log2_work=13.247928  tx=52  date=2022-05-25 20:34:12 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00a65bbf21cffba00adfe3601594d18c3a537c8dd4147babf9dc1e398bff3ac6  height=38  log2_work=13.285402  tx=55  date=2022-05-25 20:34:32 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00e460bbfd44ae7a5438ec14f0ea563c3b7326895917ea8f6bea712754c22d22  height=39  log2_work=13.321928  tx=58  date=2022-05-25 20:34:54 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=0041c6f8712c79321c7440003315917140b668ae15e3db7c4fc4467ca129f0cd  height=40  log2_work=13.357552  tx=60  date=2022-05-25 20:34:59 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=0018ea7086b17b1d801e9b92ca32210f16fb336701fa33c55fa07b4381415812  height=41  log2_work=13.392317  tx=62  date=2022-05-25 20:35:20 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=00fdccc1875433d7820d10174e1438b2d414dc262f31699d443924aad09f4151  height=42  log2_work=13.426265  tx=64  date=2022-05-25 20:35:36 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 UpdateTip:            new best=0052ea66c464df3419e8e1a37b7c8a7880816f1827211c2b6607e417c1b9268c  height=43  log2_work=13.459432  tx=66  date=2022-05-25 20:35:54 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 addcon thread interrupt
+2022-05-29 00:06:09 dumpaddr thread stop
+2022-05-29 00:06:09 UpdateTip:            new best=00ee806873357db28318a263669a37bb5328209bfbc3eb61709f7cfa818e1972  height=44  log2_work=13.491853  tx=68  date=2022-05-25 20:36:10 progress=1.000000  cache=0
+2022-05-29 00:06:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:06:09 msghand thread interrupt
+2022-05-29 00:06:09 net thread interrupt
+2022-05-29 00:06:10 opencon thread interrupt
+2022-05-29 00:06:10 Shutdown: In progress...
+2022-05-29 00:06:10 MultiChainMiner terminated
+2022-05-29 00:06:10 StopNode()
+2022-05-29 00:06:10 Node stopped
+2022-05-29 00:06:10 Shutdown: done
+2022-05-29 00:07:09 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2022-05-29 00:07:09 MultiChain version build 2.2.1 protocol 20013 (Jun  2 2021, 09:39:46)
+2022-05-29 00:07:09 Using OpenSSL version OpenSSL 1.0.1h 5 Jun 2014
+2022-05-29 00:07:09 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2022-05-29 00:07:09 Default data directory /root/.multichain/ihatecryptocoin
+2022-05-29 00:07:09 Using data directory /root/.multichain/ihatecryptocoin
+2022-05-29 00:07:09 Using config file /root/.multichain/ihatecryptocoin/ihatecryptocoin.conf
+2022-05-29 00:07:09 Using at most 125 connections (1048576 file descriptors available)
+2022-05-29 00:07:09 Using 16 threads for script verification
+2022-05-29 00:07:09 Using wallet wallet.dat
+2022-05-29 00:07:09 init message: Verifying wallet...
+2022-05-29 00:07:09 Wallet file exists. WalletDBVersion: 3.
+2022-05-29 00:07:09 Binding RPC on address :: port 4772 (IPv4+IPv6 bind any: 1)
+2022-05-29 00:07:09 init message: Initializing multichain...
+2022-05-29 00:07:09 mchn: Seed address resolved: gitgudissuesdb.westus.cloudapp.azure.com:2765
+2022-05-29 00:07:09 mchn: Parameter set is valid - initializing blockchain parameters...
+2022-05-29 00:07:09 Wallet mode: 00000103
+2022-05-29 00:07:09 nFileVersion = 100000
+2022-05-29 00:07:09 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-29 00:07:09 Node paused state is set to 00000000
+2022-05-29 00:07:09 Bound to [::]:2765
+2022-05-29 00:07:09 Bound to 0.0.0.0:2765
+2022-05-29 00:07:09 Filter initialization completed
+2022-05-29 00:07:09 Setting banned transaction list:    0 transactions
+2022-05-29 00:07:09 init message: Loading block index...
+2022-05-29 00:07:09 Opening LevelDB in /root/.multichain/ihatecryptocoin/blocks/index
+2022-05-29 00:07:09 Opened LevelDB successfully
+2022-05-29 00:07:09 Opening LevelDB in /root/.multichain/ihatecryptocoin/chainstate
+2022-05-29 00:07:09 Opened LevelDB successfully
+2022-05-29 00:07:09 nFileVersion = 100000
+2022-05-29 00:07:09 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-29 00:07:09 LoadBlockIndexDB: last block file = 0
+2022-05-29 00:07:09 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=47, size=20171, heights=0...44, time=2022-05-25...2022-05-29)
+2022-05-29 00:07:09 Checking all blk files are present...
+2022-05-29 00:07:09 LoadBlockIndexDB(): transaction index enabled
+2022-05-29 00:07:09 LoadBlockIndexDB(): hashBestChain=00ee806873357db28318a263669a37bb5328209bfbc3eb61709f7cfa818e1972 height=44 date=2022-05-25 20:36:10 progress=1.000000
+2022-05-29 00:07:09 init message: Verifying blocks...
+2022-05-29 00:07:09 Verifying last 44 blocks at level 3
+2022-05-29 00:07:09 No coin database inconsistencies in last 44 blocks (67 transactions)
+2022-05-29 00:07:09  block index              38ms
+2022-05-29 00:07:09 MultiChain protocol version: 20012
+2022-05-29 00:07:09 init message: Loading wallet...
+2022-05-29 00:07:09 nFileVersion = 100000
+2022-05-29 00:07:09 Keys: 2 plaintext, 0 encrypted, 2 w/ metadata, 2 total
+2022-05-29 00:07:09  wallet                    0ms
+2022-05-29 00:07:09 mapBlockIndex.size() = 163
+2022-05-29 00:07:09 nBestHeight = 44
+2022-05-29 00:07:09 setKeyPool.size() = 1
+2022-05-29 00:07:09 oldWallet.size() = 0
+2022-05-29 00:07:09 mapWallet.size() = 3
+2022-05-29 00:07:09 mapAddressBook.size() = 1
+2022-05-29 00:07:09 init message: Loading addresses...
+2022-05-29 00:07:09 Loaded 7 addresses from peers.dat  0ms
+2022-05-29 00:07:09 AddLocal(172.21.0.2:2765,1)
+2022-05-29 00:07:09 Discover: IPv4 eth0: 172.21.0.2
+2022-05-29 00:07:09 dnsseed thread start
+2022-05-29 00:07:09 net thread start
+2022-05-29 00:07:09 opencon thread start
+2022-05-29 00:07:09 Seed node is set, trying to connect to gitgudissuesdb.westus.cloudapp.azure.com:2765...
+2022-05-29 00:07:09 msghand thread start
+2022-05-29 00:07:09 addcon thread start
+2022-05-29 00:07:09 ERROR: Calling address lookup for gitgudissuesdb.westus.cloudapp.azure.com from secondary thread, please report this
+2022-05-29 00:07:09 init message: Reaccepting unconfirmed wallet transactions...
+2022-05-29 00:07:09 ReacceptWalletTransactions: 0 txs in unconfirmed pool 
+2022-05-29 00:07:09 dumpaddr thread start
+2022-05-29 00:07:09 init message: Done loading
+2022-05-29 00:07:09 ERROR: Calling address lookup for 0.0.0.0:0 from secondary thread, please report this
+2022-05-29 00:07:09 MultiChainMiner started
+2022-05-29 00:07:09 Node started
+2022-05-29 00:07:20 Loading addresses from DNS seeds (could take a while)
+2022-05-29 00:07:20 0 addresses found from DNS seeds
+2022-05-29 00:07:20 dnsseed thread exit
+2022-05-29 00:07:27 msghand thread interrupt
+2022-05-29 00:07:27 addcon thread interrupt
+2022-05-29 00:07:27 dumpaddr thread stop
+2022-05-29 00:07:27 net thread interrupt
+2022-05-29 00:07:31 opencon thread interrupt
+2022-05-29 00:07:31 Shutdown: In progress...
+2022-05-29 00:07:32 MultiChainMiner terminated
+2022-05-29 00:07:32 StopNode()
+2022-05-29 00:07:32 Node stopped
+2022-05-29 00:07:32 Shutdown: done
