@@ -74,6 +74,7 @@ const WalletInfo = new Schema({
   privateKey: String,
   address: String,
   lastMineDate: Date,
+  coinAmount: Number,
   transactions: [String],
 })
 
@@ -159,6 +160,9 @@ async function getUserCoinCount(inputWallet) {
         balanceResult = balanceVisitor.qty;
       }
     }
+
+    // Save it to MongoDB
+    await WalletDetails.updateOne({ '_id': inputWallet._id }, { coinAmount: balanceResult });
 
     return balanceResult;
   } catch (error) {
@@ -304,9 +308,9 @@ app.post('/api/register', async function (req, res) {
 
           // Add in the initial coins
           try {
-          let permissionsRequest = await multichain.grant({ addresses: createdAddress, permissions: "send,receive" });
-          let importRequest = await multichain.importAddress({ address: createdAddress, rescan: false });
-          let issueRequest = await multichain.issueMore({ address: createdAddress, asset: coinName, qty: 5, units: coinUnits });
+            let permissionsRequest = await multichain.grant({ addresses: createdAddress, permissions: "send,receive" });
+            let importRequest = await multichain.importAddress({ address: createdAddress, rescan: false });
+            let issueRequest = await multichain.issueMore({ address: createdAddress, asset: coinName, qty: 5, units: coinUnits });
           } catch (error) {
             console.log(error);
           }
