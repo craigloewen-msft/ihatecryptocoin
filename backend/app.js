@@ -46,9 +46,9 @@ let coinName = "ihatecryptocoin";
 let coinUnits = 0.01;
 
 async function setUpMultichain() {
-  console.log("Setting up chain params!");
   let importaddressrresponse = await multichain.importAddress({ address: config.adminMultichainAddress });
   let privkeyresponse = await multichain.importPrivKey({ privkey: config.adminMultichainPrivKey });
+  let subscribeResponse = await multichain.subscribe(["ihatecryptocoin"]);
 }
 
 setUpMultichain();
@@ -223,7 +223,6 @@ const connectEnsureLogin = require('connect-ensure-login');
 // User management routes
 
 app.post('/api/login', (req, res, next) => {
-  console.log("Logging in!");
   try {
     passport.authenticate('local',
       (err, user, info) => {
@@ -426,19 +425,17 @@ app.post('/api/blocklist', (req, res) => {
   });
 });
 
-app.post('/api/transactionblocklist', async (req, res) => {
+app.post('/api/formattedblocklist', async (req, res) => {
 
   let queryBlockList = [];
   let returnBlockList = [];
   let blockchainHeight = 0;
-  let maxTransactionCount = 20;
   let error, response = null;
   const inputBlockRange = req.body.inputBlockRange;
 
   let startTransactionIndex = 0;
   let transactionNumberCount = 0;
 
-  let searchMode = "";
 
   // Get blockchain height
   try {
@@ -449,118 +446,124 @@ app.post('/api/transactionblocklist', async (req, res) => {
   }
 
   try {
-    // Check if input works
-    if (/^[0-9-]*$/.test(inputBlockRange)) {
-      if (inputBlockRange.includes("-")) {
-        if (inputBlockRange.charAt(0) == "-") {
-          // -10 case
-          searchMode = "fromTop";
-          startTransactionIndex = 0;
-          transactionNumberCount = parseInt(inputBlockRange.substring(1, inputBlockRange.length));
-          if (transactionNumberCount > maxTransactionCount) {
-            throw "Too many requested transactions";
-          }
-        } else {
-          // 10-20 case
-          let splitArray = inputBlockRange.split("-");
-          let startInputNumber = splitArray[0];
-          let endInputNumber = splitArray[1];
+    let blockResponse = await multichain.listBlocks({ "blocks": inputBlockRange, "verbose": true });
 
-          startTransactionIndex = parseInt(startInputNumber);
-          transactionNumberCount = parseInt(endInputNumber - startInputNumber + 1);
+    // For each block in the response
+    for (let i = 0; i < blockResponse.length; i++) {
+      let blockVisitor = blockResponse[i];
+      let blockInfo = await multichain.getBlock({ "hash": blockVisitor.hash, "verbose": 4 });
 
-          searchMode = "range";
-          if (startTransactionIndex < 1 || transactionNumberCount > maxTransactionCount) {
-            throw "Output exceeds length!";
-          }
-        }
-      } else {
-        // 30 case
-        searchMode = "range";
-        let inputNumber = parseInt(inputBlockRange);
-        startTransactionIndex = inputNumber;
-        transactionNumberCount = 1;
-        if (inputNumber < 1) {
-          throw "Invalid input number";
-        }
-      }
-    } else {
-      return res.json(returnFailure("Input is invalid"));
-    }
-  } catch (error) {
-    return res.json(returnFailure("Error parsing input"));
-  }
+      let transactionTypesArray = [];
 
-  let blockIndex = 1;
-  let blockIncrement = 1;
-  let transactionFoundCount = 0;
+      // Mark the block for detailed processing later
+      for (let j = 0; j < blockInfo.tx.length; j++) {
+        let blockInfoTxVisitor = blockInfo.tx[j];
 
-  if (searchMode == "fromTop") {
-    blockIndex = blockchainHeight;
-    blockIncrement = -1;
-  }
+        for (let k = 0; k < blockInfoTxVisitor.vout.length; k++) {
+          let voutVisitor = blockInfoTxVisitor.vout[k];
+          let blockInfoString = JSON.stringify(voutVisitor);
 
-  // TODO: Add a cache to this process
+          if (blockInfoString.includes(coinName)) {
 
-  while (queryBlockList.length < transactionNumberCount) {
-    if (blockIndex < 1 || blockIndex > blockchainHeight) {
-      break;
-    } else {
-      try {
-        let blockResponse = await multichain.listBlocks({ "blocks": blockIndex, "verbose": true });
-        let blockInfo = await multichain.getBlock({ "hash": blockResponse[0].hash, "verbose": 4 });
-
-        let addBlockCheck = false;
-
-        blockInfo.tx.some((txRecord) => {
-          txRecord.vout.forEach((voutRecord) => {
-            if (!voutRecord.scriptPubKey.asm.includes('OP_RETURN')) {
-              addBlockCheck = true;
+            let addedTransactions = 0;
+            if (blockInfoString.includes("\"type\":\"issuemore\"")) {
+              addedTransactions += 1;
+              transactionTypesArray.push({ type: "issuemore", txIndex: j, voutIndex: k });
             }
 
-            return addBlockCheck;
-          });
-        });
+            if (blockInfoString.includes("\"type\":\"transfer\"")) {
+              addedTransactions += 1;
+              transactionTypesArray.push({ type: "transfer", txIndex: j, voutIndex: k });
+            }
 
-        if (addBlockCheck) {
-          transactionFoundCount += 1;
-          if (transactionFoundCount >= startTransactionIndex) {
-            queryBlockList.push(blockInfo);
+            if (blockInfoString.includes("\"type\":\"issuefirst\"")) {
+              addedTransactions += 1;
+              transactionTypesArray.push({ type: "issuefirst", txIndex: j, voutIndex: k });
+            }
+
+            if (addedTransactions != 1) {
+              console.log("Detected an unknown transaction at block: ", blockInfo.height, " txIndex: ", j, " voutIndex: ", k);
+            }
+
+          }
+        }
+      }
+
+      queryBlockList.push({ blockInfo: blockInfo, transactionTypesIncluded: transactionTypesArray });
+    }
+
+    // Post process the blocks to a return item
+    const variableCopyList = ["hash", "miner", "confirmations", "height", "time"];
+
+    for (let i = 0; i < queryBlockList.length; i++) {
+      let queryBlockVisitor = queryBlockList[i];
+      let blockInfo = queryBlockVisitor.blockInfo;
+      let returnBlockItem = {};
+
+      // Add key variables to top
+      variableCopyList.forEach((copyValueKey) => {
+        returnBlockItem[copyValueKey] = queryBlockVisitor.blockInfo[copyValueKey];
+      });
+
+      // Add vout lists
+      returnBlockItem.vout = [];
+      queryBlockVisitor.blockInfo.tx.forEach((txValue) => {
+        returnBlockItem.vout.push(txValue.vout);
+      });
+
+      // Pull in relevant info based on transactions
+      returnBlockItem.transactionList = [];
+      for (let i = 0; i < queryBlockVisitor.transactionTypesIncluded.length; i++) {
+        let transactionTypeVisitor = queryBlockVisitor.transactionTypesIncluded[i];
+        let addedOutputTransaction = {};
+
+        // Add in values we care about
+        addedOutputTransaction.type = transactionTypeVisitor.type;
+
+        let txInfo = blockInfo.tx[transactionTypeVisitor.txIndex];
+        let voutInfo = txInfo.vout[transactionTypeVisitor.voutIndex];
+        let txID = txInfo.txid;
+
+        let assetTransactionResponse = await multichain.getAssetTransaction({ asset: "ihatecryptocoin", txid: txID });
+        let addressList = Object.keys(assetTransactionResponse.addresses);
+
+        let toAddresses = [];
+        let fromAddresses = [];
+        let amount = null;
+
+        for (let j = 0; j < addressList.length; j++) {
+          let addressVisitor = addressList[j];
+          if (assetTransactionResponse.addresses[addressVisitor] > 0) {
+            toAddresses.push(addressVisitor);
+            amount = assetTransactionResponse.addresses[addressVisitor];
+          } else {
+            fromAddresses.push(addressVisitor);
           }
         }
 
-      } catch (error) {
-        return res.json(returnFailure(error.message));
+        addedOutputTransaction.toAddress = toAddresses[0];
+        addedOutputTransaction.fromAddress = fromAddresses[0];
+        addedOutputTransaction.amount = amount;
+
+        returnBlockItem.transactionList.push(addedOutputTransaction);
       }
 
-      blockIndex += blockIncrement;
+      returnBlockList.push(returnBlockItem);
     }
+
+    // Sort return block list by height
+    returnBlockList.sort((a, b) => { return b.height - a.height });
+
+    // Return block list
+    let returnValue = {};
+    returnValue.success = true;
+    returnValue.blockList = returnBlockList;
+
+    return res.json(returnValue);
+
+  } catch (error) {
+    return res.json(returnFailure(error));
   }
-
-  const variableCopyList = ["hash", "miner", "confirmations", "height", "time"];
-
-  queryBlockList.forEach((block) => {
-    let returnItem = {};
-
-    variableCopyList.forEach((copyValueKey) => {
-      returnItem[copyValueKey] = block[copyValueKey];
-    });
-
-    // Also add transaction list
-    returnItem.vout = [];
-    block.tx.forEach((txValue) => {
-      returnItem.vout.push(txValue.vout);
-    });
-
-    returnBlockList.push(returnItem);
-  });
-
-  // Return block list
-  let returnValue = {};
-  returnValue.success = true;
-  returnValue.blockList = returnBlockList;
-
-  return res.json(returnValue);
 
 });
 

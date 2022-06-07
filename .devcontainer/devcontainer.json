@@ -14,7 +14,8 @@
 	"extensions": [
 		"dbaeumer.vscode-eslint",
 		"mongodb.mongodb-vscode",
-		"octref.vetur"
+		"octref.vetur",
+		"Vue.volar"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

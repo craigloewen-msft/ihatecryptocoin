@@ -1,17 +1,16 @@
 <template>
   <div class="pageContent">
     <b-container>
-      <h1>Blockchain visualizer</h1>
+      <h1>Visualize the blockchain</h1>
       <hr />
       <div class="centered-info-box">
         <p class="small muted">
           Sample input: "-20" for last 20 items, "30-40" for a range,
           "100" for a specific item. Click on nodes below for more info.
-          Try looking at block 6!
+          Try looking at block 13!
         </p>
         <div class="text-input-flex" style="margin-bottom: 10px">
-          <p v-if="rawDataView"><b>Search blocks: </b></p>
-          <p v-if="!rawDataView"><b>Search transactions: </b></p>
+          <p><b>Search blocks: </b></p>
           <input
             class="form-control max-width-form"
             type="text"
@@ -28,10 +27,6 @@
             <b-button v-b-toggle.collapse-1 variant="info"
               >Learn more about what this page shows</b-button
             >
-            <b-button variant="info" v-on:click="toggleRawDataView()">
-              <div v-if="rawDataView">Toggle to only transactions</div>
-              <div v-if="!rawDataView">Toggle to all data</div>
-            </b-button>
           </div>
           <b-collapse id="collapse-1" class="mt-2">
             <b-card>
@@ -162,8 +157,7 @@ export default {
       blocklist: [],
       failuretext: "",
       successtext: "",
-      input: { blockRange: "-10" },
-      rawDataView: false,
+      input: { blockRange: "-30" },
     };
   },
   methods: {
@@ -173,11 +167,7 @@ export default {
 
       let queryEndpoint = "";
 
-      if (this.rawDataView) {
-        queryEndpoint = "/api/blocklist";
-      } else {
-        queryEndpoint = "/api/transactionblocklist";
-      }
+        queryEndpoint = "/api/formattedblocklist";
 
       this.$http
         .post(queryEndpoint, {
@@ -238,10 +228,6 @@ export default {
       } else {
         return false;
       }
-    },
-    toggleRawDataView: function () {
-      this.rawDataView = !this.rawDataView;
-      this.refreshBlockList();
     },
   },
   mounted() {
